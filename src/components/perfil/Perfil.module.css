@@ -1,0 +1,91 @@
+.divFirst {
+    margin: 1%;
+}
+.divMain {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--ternary-color-500);
+    padding: 4%;
+    border-radius: 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+.imgPhoto {
+    width: 600px; 
+    height: 600px; 
+    object-fit: cover; 
+    object-position: 45% 0;
+    border-radius: 50%;
+    border: 2px solid var(--quaternary-color-500);
+    box-shadow: 10px 10px 50px #ccc;
+      -moz-box-shadow: 10px 10px 50px #ccc;
+      -webkit-box-shadow: 10px 10px 50px #ccc;
+      -khtml-box-shadow: 10px 10px 50px #ccc;
+      animation-duration: 0.5s;
+      animation-name: animate-fade;
+      animation-delay: 0.4s;
+      animation-fill-mode: backwards;
+}
+.imgLogo {
+    width: 60px;
+    height: 50px;margin-bottom: 15px;
+}
+.divTxtPerfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    shape-outside: circle(50%);
+    padding-right: 4%;
+    font-size: 20px;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+.txtTitle {
+    font-size: 30px;
+    font-weight:600;
+}
+.btnCv {
+    @apply flex w-full justify-center rounded-full bg-[#526D82] px-9 py-1.5 text-sm font-semibold transition duration-700 leading-6 text-white shadow-sm hover:bg-[#27374D] transform hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+}
+@keyframes animate-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}  
+@media (max-width: 1300px) {
+    .imgPhoto {
+        width: 400px; 
+        height: 400px; 
+    }
+}
+@media (max-width: 1000px) {
+    .imgPhoto {
+        width: 400px; 
+        height: 400px; 
+        margin-bottom: 30px;
+    }
+    .divMain {
+      flex-direction: column-reverse;
+    }
+    .divTxtPerfil {
+        padding-right: 0%;
+    }
+}
+@media (max-width: 390px) {
+    .imgPhoto {
+        width: 200px; 
+        height: 200px; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .divMain {
+      flex-direction: column-reverse;
+    }
+}

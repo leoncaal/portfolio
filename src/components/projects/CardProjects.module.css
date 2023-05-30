@@ -1,0 +1,11 @@
+.divMain {
+    margin: 0px 40px 0px 40px;
+}
+.divName {
+    text-align: center;
+}
+@media (max-width: 640px){
+    .divMain {
+        margin: 20px 0px 20px 0px;
+    }
+}
