@@ -5,19 +5,20 @@
     display: flex;
     flex-direction: column;
     background-color: var(--quaternary-color-500);
-    padding: 4%;
     border-radius: 20px 20px;
     align-items: center;
     justify-content: center;
+    padding: 12% 4% 12% 4%;
 }
 .divMain {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .txtTitle {
-    padding-bottom: 40%;
+    padding-bottom: 100%;
     font-size: 30px;
     font-weight:600;
 }

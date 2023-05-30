@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Ciudades del Mundo",
         "description": "Descripcion Coudades",
-        "image": "/assets/images/IMG_8054.jpg",
+        "image": "/assets/images/projects/countries01.png",
         "technologies": ["css"]
 
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "name": "Visit Matina",
         "description": "Descripcion Visit",
-        "image": "/assets/images/IMG_8054.jpg",
+        "image": "/assets/images/projects/visit01.png",
         "technologies": ["react"]
     }
 ]

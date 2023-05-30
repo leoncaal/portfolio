@@ -1,14 +1,16 @@
 .divFirst {
     margin: 1%;
+
 }
 .divMain {
     display: flex;
     flex-direction: row;
     background-color: var(--ternary-color-500);
-    padding: 4%;
+    padding: 8% 4% 8% 4%;
     border-radius: 20px 20px;
     justify-content: center;
     align-items: center;
+    height:100%;
 }
 .imgPhoto {
     width: 600px; 
