@@ -6,6 +6,20 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --primary-color-500: #27374D;
+
+  --secondary-color-500: #526D82 ;
+
+  --ternary-color-500: #9DB2BF ;
+
+  --quaternary-color-500: #DDE6ED ;
+
+
+
 }
 
 @media (prefers-color-scheme: dark) {
