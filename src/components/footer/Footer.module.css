@@ -26,9 +26,9 @@
 }
 @media (max-width: 390px) {
     .divMain {
-        padding: 8% 4% 8% 4%;
+        padding: 4% 4% 4% 4%;
     }
     .img {
-        margin: 0px 40px 0px 0px;
+        margin: 15px 30px 15px 0px;
     }
 }
