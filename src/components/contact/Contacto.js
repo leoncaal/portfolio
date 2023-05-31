@@ -2,7 +2,7 @@ import styles from "./Contacto.module.css";
 
 const Contacto = () => {
   return (
-    <div className={styles.divFirst}>
+    <div className={styles.divFirst} id="contacto">
       <div className={styles.divMain}>
 
       <form className={styles.form}>
@@ -11,7 +11,7 @@ const Contacto = () => {
           <h2 className={styles.txtTitle}>Contacto</h2>
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="col-span-full">
-              <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-white">
                 Nombre
               </label>
               <div className="mt-2">
@@ -26,7 +26,7 @@ const Contacto = () => {
             </div>
 
             <div className="col-span-full">
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="email" className="block text-sm font-medium leading-6 text-white">
                 Email
               </label>
               <div className="mt-2">
@@ -41,7 +41,7 @@ const Contacto = () => {
             </div>
 
             <div className="col-span-full">
-              <label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="about" className="block text-sm font-medium leading-6 text-white">
                 Comentarios
               </label>
               <div className="mt-2">
@@ -59,7 +59,7 @@ const Contacto = () => {
       </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
+        <button type="button" className="text-sm font-semibold leading-6 text-white">
           Cancelar
         </button>
         <button

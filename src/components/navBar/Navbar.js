@@ -9,9 +9,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Inicio', href: '#', current: true },
-  { name: 'Conoceme', href: '#', current: false },
+  { name: 'Conoceme', href: '#conoceme', current: false },
   { name: 'Proyectos', href: '#projects', current: false },
-  { name: 'Contacto', href: '#', current: false },
+  { name: 'Contacto', href: '#contacto', current: false },
 ]
 
 function classNames(...classes) {
@@ -20,7 +20,7 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-    <Disclosure as="nav" className={`${styles.nav}`}>
+    <Disclosure as="nav" className={`${styles.nav} fixed w-full`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
