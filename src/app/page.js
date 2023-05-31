@@ -6,8 +6,10 @@ import Footer from "@/components/footer/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div>      
+      <section>
         <Navbar />
+      </section>
       <section>
         <Perfil />
       </section>
