@@ -70,9 +70,6 @@ const Contacto = () => {
         </button>
       </div>
     </form>
-
-
-
       </div>
     </div>
   );
