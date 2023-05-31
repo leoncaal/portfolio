@@ -13,7 +13,7 @@ const Perfil = () => {
             {titulo}
           </h1>
           <br />
-          {nl2br(texto)}
+          <p className={styles.txtText}>{nl2br(texto)}</p>
           <br /><br />
           <a href="/assets/docs/CV_Leonel_Castaneda_Developer.pdf" download ><button className={styles.btnCv}>Download CV</button></a>
         </div>

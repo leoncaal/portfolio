@@ -1,6 +1,8 @@
 import Perfil from "../components/perfil/Perfil";
 import Navbar from "@/components/navBar/Navbar";
 import Projects from "@/components/projects/Projects";
+import Contacto from "@/components/contact/Contacto";
+import Footer from "@/components/footer/Footer";
 
 const Home = () => {
   return (
@@ -11,6 +13,12 @@ const Home = () => {
       </section>
       <section>
         <Projects />
+      </section>
+      <section>
+        <Contacto />
+      </section>
+      <section>
+        <Footer />
       </section>
 
     </div>

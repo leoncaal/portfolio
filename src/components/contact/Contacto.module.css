@@ -1,0 +1,37 @@
+.divFirst {
+    margin: 1%;
+
+}
+.divMain {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color-500);
+    padding: 8% 4% 8% 4%;
+    border-radius: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.txtTitle {
+    text-align: center;
+    font-size: 30px;
+    font-weight:600;
+}
+.btnSend {
+    @apply flex justify-center rounded-full bg-[#526D82] px-9 py-1.5 text-sm font-semibold transition duration-700 leading-6 text-white shadow-sm hover:bg-[#9DB2BF] transform hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+}
+@media (max-width: 1000px) {
+    .form {
+        width: 90%;
+    }
+}
+@media (max-width: 390px) {
+    .txtTitle {
+        font-size: 20px;
+    }
+}

@@ -8,7 +8,7 @@
     border-radius: 20px 20px;
     align-items: center;
     justify-content: center;
-    padding: 12% 4% 12% 4%;
+    padding: 8% 4% 8% 4%;
 }
 .divMain {
     display: flex;
@@ -28,5 +28,10 @@
     }
     .txtTitle {
         padding-bottom: 10%;
+    }
+}
+@media (max-width: 390px) {
+    .txtTitle {
+        font-size: 20px;
     }
 }

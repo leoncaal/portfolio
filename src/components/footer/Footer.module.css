@@ -1,0 +1,31 @@
+.divFirst {
+    margin: 1%;
+}
+.divMain {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--ternary-color-500);
+    border-radius: 20px 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 4% 1% 4%;
+}
+.txtName {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 40px 0px 0px;
+    width: 100%;
+    text-align: center;
+}
+.img {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px 15px 0px 0px;
+}
+.imgEmail {
+    width: 38px;
+    height: 35px;
+    padding: 0px 0px 0px 0px;
+}
