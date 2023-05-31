@@ -14,7 +14,7 @@ const Footer = () => {
         <h1 className={styles.txtName}>© 2023 Leonel Castañeda</h1>
         <Link href="https://github.com/leoncaal" target="_blank"><Image className={styles.img} src={git} alt="GitHub" /></Link>
         <Link href="https://www.linkedin.com/in/leonel-castaneda/" target="_blank"><Image className={styles.img} src={link} alt="Linkedin" /></Link>
-        <Link href="mailto:leonel_1mx@yahoo.com.mx" target="_blank"><Image className={styles.imgEmail} src={email} alt="Linkedin" /></Link>
+        <Link href="mailto:leonel_1mx@yahoo.com.mx" target="_blank"><Image className={styles.img} src={email} alt="Linkedin" /></Link>
         </div>
         </div>
   )
