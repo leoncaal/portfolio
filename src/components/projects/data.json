@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Ciudades del Mundo",
+        "name": "Paises del Mundo",
         "description": "Descripcion Coudades",
         "image": "/assets/images/projects/countries01.png",
         "technologies": ["css"]
