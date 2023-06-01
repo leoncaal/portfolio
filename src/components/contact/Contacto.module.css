@@ -1,5 +1,5 @@
 .divFirst {
-    margin: 17px;
+    margin: 1%;
 }
 .divMain {
     display: flex;
@@ -40,11 +40,16 @@
         width: 90%;
     }
 }
+@media (max-width: 640px) {
+    .destination {
+        margin-top:-64px;
+    }
+}
 @media (max-width: 390px) {
     .txtTitle {
         font-size: 20px;
     }
     .destination {
-        margin-top:-78px;
+        margin-top:-64px;
     }
 }

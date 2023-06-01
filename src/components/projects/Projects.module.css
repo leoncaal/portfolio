@@ -1,5 +1,5 @@
 .divFirst {
-    margin: 17px;
+    margin: 1%;
 }
 .divAux{
     display: flex;
@@ -44,6 +44,6 @@
         font-size: 20px;
     }
     .destination {
-        margin-top:-78px;
+        margin-top:-64px;
     }
 }
