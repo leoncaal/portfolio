@@ -17,6 +17,12 @@
     align-items: center;
     width: 100%;
 }
+.destination {
+    position:absolute;
+    z-index:-1;
+    left:0;
+    margin-top:-80px;/* height of nav*/
+}
 .txtTitle {
     padding-bottom: 100%;
     font-size: 30px;
@@ -33,5 +39,8 @@
 @media (max-width: 390px) {
     .txtTitle {
         font-size: 20px;
+    }
+    .destination {
+        margin-top:-64px;
     }
 }

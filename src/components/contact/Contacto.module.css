@@ -11,6 +11,12 @@
     align-items: center;
     height:100%;
 }
+.destination {
+    position:absolute;
+    z-index:-1;
+    left:0;
+    margin-top:-80px;/* height of nav*/
+}
 .form {
     display: flex;
     flex-direction: column;
@@ -25,6 +31,10 @@
 .btnSend {
     @apply flex justify-center rounded-full bg-[#526D82] px-9 py-1.5 text-sm font-semibold transition duration-700 leading-6 text-white shadow-sm hover:bg-[#9DB2BF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
 }
+.txtAlert {
+    font-size: 12px;
+    padding-top: 15px;
+}
 @media (max-width: 1000px) {
     .form {
         width: 90%;
@@ -33,5 +43,8 @@
 @media (max-width: 390px) {
     .txtTitle {
         font-size: 20px;
+    }
+    .destination {
+        margin-top:-64px;
     }
 }
