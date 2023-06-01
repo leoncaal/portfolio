@@ -28,6 +28,11 @@
     font-size: 30px;
     font-weight:600;
 }
+@media (max-width: 844px) {
+    .destination {
+        margin-top:-70px;
+    }
+}
 @media (max-width: 640px) {
     .divMain {
         flex-direction: column;
