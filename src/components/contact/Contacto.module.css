@@ -40,6 +40,11 @@
         width: 90%;
     }
 }
+@media (max-width: 844px) {
+    .destination {
+        margin-top:-70px;
+    }
+}
 @media (max-width: 640px) {
     .destination {
         margin-top:-64px;
