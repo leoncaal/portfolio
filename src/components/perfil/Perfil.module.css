@@ -84,7 +84,7 @@
         padding-right: 0%;
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 450px) {
     .imgPhoto {
         width: 200px; 
         height: 200px; 
