@@ -35,12 +35,15 @@
     .txtTitle {
         padding-bottom: 10%;
     }
+    .destination {
+        margin-top:-64px;
+    }
 }
 @media (max-width: 390px) {
     .txtTitle {
         font-size: 20px;
     }
     .destination {
-        margin-top:-64px;
+        margin-top:-78px;
     }
 }
