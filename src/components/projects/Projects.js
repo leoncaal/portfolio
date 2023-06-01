@@ -4,10 +4,11 @@ import CardProjects from "./CardProjects";
 const Projects = () => {
   const projects = require("./data.json");
   return (
-    <div className={styles.divFirst} id="projects">
+    <div className={styles.divFirst} >
+      <div className={styles.destination} id="projects"></div>
       <div className={styles.divAux}>
       <div>
-        <h1 className={styles.txtTitle}>Proyectos</h1>
+        <h1 className={`${styles.txtTitle} dark:text-black`}>Proyectos</h1>
       </div>
       
     <div className={styles.divMain}>

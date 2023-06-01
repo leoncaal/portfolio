@@ -1,8 +1,44 @@
+"use client";
+
 import styles from "./Contacto.module.css";
+import Validation from "./Validation";
+import { useState } from "react";
 
 const Contacto = () => {
+
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+    comments: ""
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handlerInputs = (event) =>{
+    setInputs ({
+      ...inputs,
+      [event.target.name]: event.target.value,
+    });
+    setErrors (
+      Validation({
+        ...inputs,
+        [event.target.name]: event.target.value
+      })
+    );
+
+  }
+  const handlerClean = () => {
+    setInputs ({
+      name: "",
+      email: "",
+      comments: ""
+    });
+    setErrors({});
+  }
+
   return (
-    <div className={styles.divFirst} id="contacto">
+    <div className={styles.divFirst}>
+      <div className={styles.destination} id="contacto"></div>
       <div className={styles.divMain}>
 
       <form className={styles.form}>
@@ -17,12 +53,15 @@ const Contacto = () => {
               <div className="mt-2">
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
+                  name="name"
+                  id="name"
+                  value={inputs.name}
+                  onChange={handlerInputs}
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+              <p className={styles.txtAlert}>{errors.name}</p>
             </div>
 
             <div className="col-span-full">
@@ -34,10 +73,13 @@ const Contacto = () => {
                   id="email"
                   name="email"
                   type="email"
+                  value={inputs.email}
+                  onChange={handlerInputs}
                   autoComplete="email"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+              <p className={styles.txtAlert}>{errors.email}</p>
             </div>
 
             <div className="col-span-full">
@@ -46,20 +88,23 @@ const Contacto = () => {
               </label>
               <div className="mt-2">
                 <textarea
-                  id="about"
-                  name="about"
+                  id="comments"
+                  name="comments"
+                  type="text"
+                  value={inputs.comments}
+                  onChange={handlerInputs}
                   rows={4}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  defaultValue={''}
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+              <p className={styles.txtAlert}>{errors.comments}</p>
             </div>
           </div>
         </div>
       </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <button type="button" className="text-sm font-semibold leading-6 text-white">
+        <button type="button" className="text-sm font-semibold leading-6 text-white" onClick={handlerClean}>
           Cancelar
         </button>
         <button
