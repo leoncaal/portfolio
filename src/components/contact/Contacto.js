@@ -49,7 +49,11 @@ const Contacto = () => {
                     confirmButtonColor: '#526D82'
                 }
                 
-                    )).catch((error) => error && alrt.fire(error.response.data.error));
+                    )).catch((error) => error && alrt.fire({
+                      title: "Disculpa",
+                    text: error.response.data.error,
+                    icon: "error",
+                    confirmButtonColor: '#526D82' }));
       setInputs({
         name: "",
         email: "",
