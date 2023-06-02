@@ -3,6 +3,8 @@
 import styles from "./Contacto.module.css";
 import Validation from "./Validation";
 import { useState } from "react";
+import axios from "axios";
+import alrt from 'sweetalert2';
 
 const Contacto = () => {
 
@@ -35,6 +37,29 @@ const Contacto = () => {
     });
     setErrors({});
   }
+
+  const handlerSummit = (event) => {
+    event.preventDefault();
+    const numErrors = Object.keys(errors).length;
+    if (numErrors === 0 && inputs.name !== "" && inputs.email !== "" && inputs.comments !== "") {
+      axios.post('/api/controller', inputs).then((res) => res && alrt.fire({
+                    title: "Gracias",
+                    text: res.data.message,
+                    icon: "success",
+                    confirmButtonColor: '#526D82'
+                }
+                
+                    )).catch((error) => error && alrt.fire(error.response.data.error));
+      setInputs({
+        name: "",
+        email: "",
+        comments: ""
+      });
+      setErrors({});
+    } else {
+      window.alert("Ingresa todos los datos")
+    }
+  };
 
   return (
     <div className={styles.divFirst}>
@@ -110,6 +135,7 @@ const Contacto = () => {
         <button
           type="submit"
           className={styles.btnSend}
+          onClick={handlerSummit}
         >
           Enviar
         </button>
