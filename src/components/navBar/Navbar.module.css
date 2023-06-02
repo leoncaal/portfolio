@@ -4,6 +4,7 @@
     margin: 0% 0% 0% 1%;
     border-radius: 20px 20px 20px 20px;
     background-color: var(--primary-color-500);
+    z-index: 1;
 }
 @media (max-width: 390px){
     .nav {
