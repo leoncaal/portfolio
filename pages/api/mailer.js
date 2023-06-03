@@ -14,8 +14,8 @@ export async function sendEmail({ name, email, comments }) {
   const mailOptions = {
     from: email,
     to: 'leoncaal@gmail.com',
-    subject: 'New message from your portfolio',
-    text: `Name: ${name}\nEmail: ${email}\n\n${comments}`,
+    subject: 'Te han contactado',
+    text: `Te contacto: ${name}\nsu email: ${email}\n${comments}`,
   };
 
   try {

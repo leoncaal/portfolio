@@ -38,6 +38,18 @@ const Contacto = () => {
     setErrors({});
   }
 
+  const Toast = alrt.mixin({
+    toast: true,
+    position: 'center',
+    iconColor: 'white',
+    customClass: {
+      popup: 'colored-toast'
+    },
+    showConfirmButton: false,
+    timer: 1500,
+    timerProgressBar: true
+  })
+
   const handlerSummit = (event) => {
     event.preventDefault();
     const numErrors = Object.keys(errors).length;
@@ -49,7 +61,12 @@ const Contacto = () => {
                     confirmButtonColor: '#526D82'
                 }
                 
-                    )).catch((error) => error && alrt.fire({
+                    /* )).catch((error) => error && alrt.fire({
+                      title: "Disculpa",
+                    text: error.response.data.error,
+                    icon: "error",
+                    confirmButtonColor: '#526D82' })); */
+                    )).catch((error) => error && Toast.fire({
                       title: "Disculpa",
                     text: error.response.data.error,
                     icon: "error",
@@ -61,7 +78,7 @@ const Contacto = () => {
       });
       setErrors({});
     } else {
-      alrt.fire({
+      Toast.fire({
         title: "Por favor",
       text: "Ingresa todos los datos",
       icon: "warning",
