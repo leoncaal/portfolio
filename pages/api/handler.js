@@ -1,6 +1,6 @@
 import { sendEmail } from './mailer';
 
-export default async function controller (req, res) {
+export default async function handler (req, res) {
 
   if (req.method === 'POST') {
     const { name, email, comments } = req.body;
