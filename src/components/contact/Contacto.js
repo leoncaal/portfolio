@@ -42,7 +42,7 @@ const Contacto = () => {
     event.preventDefault();
     const numErrors = Object.keys(errors).length;
     if (numErrors === 0 && inputs.name !== "" && inputs.email !== "" && inputs.comments !== "") {
-      axios.post('/api/controller', inputs).then((res) => res && alrt.fire({
+      axios.post('/api/handler', inputs).then((res) => res && alrt.fire({
                     title: "Gracias",
                     text: res.data.message,
                     icon: "success",
@@ -61,7 +61,11 @@ const Contacto = () => {
       });
       setErrors({});
     } else {
-      window.alert("Ingresa todos los datos")
+      alrt.fire({
+        title: "Por favor",
+      text: "Ingresa todos los datos",
+      icon: "warning",
+      confirmButtonColor: '#526D82' })
     }
   };
 
