@@ -14,4 +14,4 @@ export default async function handler (req, res) {
   } else {
     res.status(400).json({ error: 'Fallo el envio' });
   }
-}
+} 

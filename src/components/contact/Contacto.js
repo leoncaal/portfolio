@@ -37,19 +37,6 @@ const Contacto = () => {
     });
     setErrors({});
   }
-
-  const Toast = alrt.mixin({
-    toast: true,
-    position: 'center',
-    iconColor: 'white',
-    customClass: {
-      popup: 'colored-toast'
-    },
-    showConfirmButton: false,
-    timer: 1500,
-    timerProgressBar: true
-  })
-
   const handlerSummit = (event) => {
     event.preventDefault();
     const numErrors = Object.keys(errors).length;
@@ -57,20 +44,29 @@ const Contacto = () => {
       axios.post('/api/handler', inputs).then((res) => res && alrt.fire({
                     title: "Gracias",
                     text: res.data.message,
-                    icon: "success",
-                    confirmButtonColor: '#526D82'
+                    iconHtml: `<img src="/assets/images/iconos/send.png">`,
+                    timer: 2500,
+                    width: "300px",
+                    timerProgressBar: true,
+                    background: "#DDE6ED",
+                    showConfirmButton: false,
+                    customClass: {
+                      icon: styles.noborder
+                    }
                 }
-                
-                    /* )).catch((error) => error && alrt.fire({
+                    )).catch((error) => error && alrt.fire({
                       title: "Disculpa",
                     text: error.response.data.error,
-                    icon: "error",
-                    confirmButtonColor: '#526D82' })); */
-                    )).catch((error) => error && Toast.fire({
-                      title: "Disculpa",
-                    text: error.response.data.error,
-                    icon: "error",
-                    confirmButtonColor: '#526D82' }));
+                    iconHtml: `<img src="/assets/images/iconos/notsend.png">`,
+                    timer: 2500,
+                    width: "300px",
+                    timerProgressBar: true,
+                    background: "#DDE6ED",
+                    showConfirmButton: false,
+                    customClass: {
+                      icon: styles.noborder,
+                    }
+                   }));
       setInputs({
         name: "",
         email: "",
@@ -78,11 +74,20 @@ const Contacto = () => {
       });
       setErrors({});
     } else {
-      Toast.fire({
+      alrt.fire({
         title: "Por favor",
       text: "Ingresa todos los datos",
-      icon: "warning",
-      confirmButtonColor: '#526D82' })
+      /* icon: "warning", */
+      iconHtml: `<img src="/assets/images/iconos/alert.png">`,
+      timer: 2500,
+      width: "300px",
+      timerProgressBar: true,
+      background: "#DDE6ED",
+      showConfirmButton: false,
+      customClass: {
+        icon: styles.noborder,
+      }
+    })
     }
   };
 
