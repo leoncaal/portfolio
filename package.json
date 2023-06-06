@@ -26,5 +26,8 @@
     "react-nl2br": "^1.0.4",
     "sweetalert2": "^11.7.10",
     "tailwindcss": "3.3.2"
+  },
+  "devDependencies": {
+    "daisyui": "^3.0.3"
   }
 }

@@ -17,6 +17,12 @@
     align-items: center;
     width: 100%;
 }
+.btnCard {
+    display: flex;
+}
+.btnClose {
+    @apply flex justify-center rounded-full bg-[#526D82] px-9 py-1.5 text-sm font-semibold transition duration-700 leading-6 text-white shadow-sm hover:bg-[#27374D] transform hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+}
 .destination {
     position:absolute;
     z-index:-1;
