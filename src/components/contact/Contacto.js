@@ -37,42 +37,51 @@ const Contacto = () => {
     });
     setErrors({});
   }
-  const handlerSummit = (event) => {
+  const handlerSummit = async (event) => {
     event.preventDefault();
     const numErrors = Object.keys(errors).length;
     if (numErrors === 0 && inputs.name !== "" && inputs.email !== "" && inputs.comments !== "") {
-      axios.post('/api/handler', inputs).then((res) => res && alrt.fire({
-                    title: "Gracias",
-                    text: res.data.message,
-                    iconHtml: `<img src="/assets/images/iconos/send.png">`,
-                    timer: 2500,
-                    width: "300px",
-                    timerProgressBar: true,
-                    background: "#DDE6ED",
-                    showConfirmButton: false,
-                    customClass: {
-                      icon: styles.noborder
-                    }
-                }
-                    )).catch((error) => error && alrt.fire({
-                      title: "Disculpa",
-                    text: error.response.data.error,
-                    iconHtml: `<img src="/assets/images/iconos/notsend.png">`,
-                    timer: 2500,
-                    width: "300px",
-                    timerProgressBar: true,
-                    background: "#DDE6ED",
-                    showConfirmButton: false,
-                    customClass: {
-                      icon: styles.noborder,
-                    }
-                   }));
-      setInputs({
-        name: "",
-        email: "",
-        comments: ""
-      });
-      setErrors({});
+
+      try {
+
+        const res = await axios.post('/api/handler', inputs);
+        alrt.fire({
+          title: "Gracias",
+          text: res.data.message,
+          iconHtml: `<img src="/assets/images/iconos/send.png">`,
+          timer: 2500,
+          width: "300px",
+          timerProgressBar: true,
+          background: "#DDE6ED",
+          showConfirmButton: false,
+          customClass: {
+            icon: styles.noborder
+          }
+      }
+          )
+          setInputs({
+            name: "",
+            email: "",
+            comments: ""
+          });
+          setErrors({});
+
+      } catch (error) {
+        alrt.fire({
+          title: "Disculpa",
+        text: error.response.data.error,
+        iconHtml: `<img src="/assets/images/iconos/notsend.png">`,
+        timer: 2500,
+        width: "300px",
+        timerProgressBar: true,
+        background: "#DDE6ED",
+        showConfirmButton: false,
+        customClass: {
+          icon: styles.noborder,
+        }
+       })
+      }
+      
     } else {
       alrt.fire({
         title: "Por favor",

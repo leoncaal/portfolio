@@ -34,6 +34,7 @@
 .txtAlert {
     font-size: 12px;
     padding-top: 15px;
+    color: white;
 }
 .noborder {
     border: 0;
