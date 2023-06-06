@@ -8,8 +8,7 @@ const projects = require("./data.json");
 
 const DetailProject = (props) => {
     const datos = projects.filter(project => project.id === props.id);
-    console.log(datos);
-
+    
   return (
     <div>
         <div className={styles.divTitle}>
@@ -22,6 +21,7 @@ const DetailProject = (props) => {
             {datos[0].image.map(img => {
                 return (
                     <img
+                    key={img}
                     src={img}
                     alt={img}
                     className="h-full w-full object-cover"
@@ -41,7 +41,7 @@ const DetailProject = (props) => {
     <ul className="list-disc pl-4">
         {datos[0].bullets.map(bullet => {
             return(
-                <li>{bullet}</li>
+                <li key={bullet}>{bullet}</li>
             )
         }
         )}
@@ -57,6 +57,7 @@ const DetailProject = (props) => {
   {datos[0].technologies.map(tech => {
                 return (
                     <img
+                    key={tech}
                     src={`/assets/images/iconos/${tech}.png`}
                     alt={tech}
                     className={styles.imgIcon}

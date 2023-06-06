@@ -16,6 +16,7 @@
         "id": 2,
         "name": "Visit Matina",
         "description": "Descripcion Visit",
+        "bullets": ["Muestra los paises contenidos en la base de datos.", "Detalle de la informaciónde cada pais.", "Buscador de paises.", "Ordenamiento de los paises de forma alfabetica o por población.", "Filtrado por Continente y por Actividades.", "Formulario para agregar actividades a uno o mas paises a la vez."],
         "image": ["/assets/images/projects/visit01.png", 
             "/assets/images/projects/visit02.png", 
             "/assets/images/projects/visit03.png", 
