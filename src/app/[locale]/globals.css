@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --primary-color-500: #27374D;
+
+  --secondary-color-500: #526D82 ;
+
+  --ternary-color-500: #9DB2BF ;
+
+  --quaternary-color-500: #DDE6ED ;
+
+  --backgroundModalDia: #DDE6ED ;
+
+  --backgroundCardDia: #ffffff ;
+
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --backgroundModalDia: #27374D ;
+    --backgroundCardDia: #526D82 ;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}

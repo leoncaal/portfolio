@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Paises del Mundo",
+        "description": "It was the first project that I carried out individually, it saves in the prostgres database the information consumed from an external api to later be consumed from said DB. It was a very challenging project since at that time I still did not have enough knowledge, which led me to investigate many things. \n\n Its objective is to show all the countries of the world as well as their information in more detail. \n\n Below I list some of its features: ",
+        "bullets": ["Shows the countries contained in the database.", "Details of the information of each country.", "Country search engine.", "Ordering of countries alphabetically or by population.", "Filtered by Continent and by Activities.", "Form to add activities to one or more countries at the same time."],
+        "image": ["/assets/images/projects/countries01.png", 
+            "/assets/images/projects/countries02.png", 
+            "/assets/images/projects/countries03.png", 
+            "/assets/images/projects/countries04.png"],
+        "technologies": ["inodejs", "ijavascript", "ireact", "iredux", "ihtml", "icss", "iexpress", "ipostgres" , "isequelize"],
+        "website": "https://deploy-countries-bay.vercel.app",
+        "visit": "Visit",
+        "close": "Close",
+        "technologiesD": "Technologies",
+        "descriptionD": "Description"
+    },
+    {
+        "id": 2,
+        "name": "Visit Matina",
+        "description": "The VisitMatina site was a project carried out as a team working together with a tourist alliance from Matina, Costa Rica. Its objective is to encourage local and international tourism in the area. Throughout the project, work was done under the SCRUM methodology.\n\nAt the end of the project, the site was delivered to the client, who comments that it will be very useful to promote the products and services of the region. \n\n Features:",
+        "bullets": ["Creation of each business within the site.", "User registration and authentication with Google.", "Integration of personalized review system for each business.", "Blog to publish news from the region.", "Hosting of multimedia files in Cloudinary.", "Payment gateway with Paypal.", "Contact of each business with nodemailer.", "Administrator dashboard.", "Operations to register businesses, products, tourist packages and blog news."],
+        "image": ["/assets/images/projects/visit01.png", 
+            "/assets/images/projects/visit02.png", 
+            "/assets/images/projects/visit03.png", 
+            "/assets/images/projects/visit04.png" ],
+        "technologies": ["inodejs", "ijavascript", "ireact", "iredux", "ihtml", "icss", "ibootstrap", "iexpress", "ipostgres", "isequelize"],
+        "website": "https://visit-matina.vercel.app",
+        "visit": "Visit",
+        "close": "Close",
+        "technologiesD": "Technologies",
+        "descriptionD": "Description"
+    },
+    {
+        "id": 3,
+        "name": "Portfolio",
+        "description": "",
+        "bullets": ["Muestra los paises contenidos en la base de datos.", "Detalle de la informaciónde cada pais.", "Buscador de paises.", "Ordenamiento de los paises de forma alfabetica o por población.", "Filtrado por Continente y por Actividades.", "Formulario para agregar actividades a uno o mas paises a la vez."],
+        "image": ["/assets/images/projects/portfolio01.png", 
+            "/assets/images/projects/portfolio02.png", 
+            "/assets/images/projects/portfolio03.png", 
+            "/assets/images/projects/portfolio04.png" ],
+        "technologies": ["inodejs", "ijavascript", "inext", "ireact", "ihtml", "icss", "itailwind"],
+        "website": "https://portfolio-leoncaal.vercel.app",
+        "visit": "Visit",
+        "close": "Close",
+        "technologiesD": "Technologies",
+        "descriptionD": "Description"
+    }
+]
