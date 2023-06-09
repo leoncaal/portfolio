@@ -17,6 +17,12 @@
     align-items: center;
     width: 100%;
 }
+.divRest {
+    background-color: var(--backgroundModalDia);
+}
+.divClose {
+    background-color: var(--backgroundModalDia);
+}
 .btnCard {
     display: flex;
 }
@@ -33,6 +39,7 @@
     padding-bottom: 100%;
     font-size: 30px;
     font-weight:600;
+    color: black;
 }
 @media (max-width: 844px) {
     .destination {
@@ -58,3 +65,11 @@
         margin-top:-64px;
     }
 }
+@media (prefers-color-scheme: dark) {
+    .divRest {
+        background-color: var(--backgroundModalDia);
+    }
+    .divClose {
+        background-color: var(--backgroundModalDia);
+    }
+  }

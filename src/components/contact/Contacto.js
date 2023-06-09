@@ -5,8 +5,11 @@ import Validation from "./Validation";
 import { useState } from "react";
 import axios from "axios";
 import alrt from 'sweetalert2';
+import {useTranslations} from 'next-intl';
 
 const Contacto = () => {
+
+  const t = useTranslations('Contacto');
 
   const [inputs, setInputs] = useState({
     name: "",
@@ -45,9 +48,10 @@ const Contacto = () => {
       try {
 
         const res = await axios.post('/api/handler', inputs);
-        alrt.fire({
-          title: "Gracias",
-          text: res.data.message,
+        if (res.data.message === "Enviado con exito"){
+          alrt.fire({
+          title: t('gracias'),
+          text: t('exito'),
           iconHtml: `<img src="/assets/images/iconos/send.png">`,
           timer: 2500,
           width: "300px",
@@ -65,11 +69,14 @@ const Contacto = () => {
             comments: ""
           });
           setErrors({});
+        }
+        
 
       } catch (error) {
-        alrt.fire({
-          title: "Disculpa",
-        text: error.response.data.error,
+        if (error.response.data.error === "Fallo el envio"){
+          alrt.fire({
+          title: t('disculpa'),
+        text: t('error'),
         iconHtml: `<img src="/assets/images/iconos/notsend.png">`,
         timer: 2500,
         width: "300px",
@@ -80,12 +87,14 @@ const Contacto = () => {
           icon: styles.noborder,
         }
        })
+        }
+        
       }
       
     } else {
       alrt.fire({
-        title: "Por favor",
-      text: "Ingresa todos los datos",
+        title: t('favor'),
+      text: t('ingresa'),
       /* icon: "warning", */
       iconHtml: `<img src="/assets/images/iconos/alert.png">`,
       timer: 2500,
@@ -108,11 +117,11 @@ const Contacto = () => {
       <form className={styles.form}>
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
-          <h2 className={styles.txtTitle}>Contacto</h2>
+          <h2 className={styles.txtTitle}>{t('titulo')}</h2>
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="col-span-full">
               <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-white">
-                Nombre
+                {t('nombre')}
               </label>
               <div className="mt-2">
                 <input
@@ -122,15 +131,15 @@ const Contacto = () => {
                   value={inputs.name}
                   onChange={handlerInputs}
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="px-2 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
-              <p className={styles.txtAlert}>{errors.name}</p>
+              <p className={styles.txtAlert}>{errors.name && t('vnombre')}</p>
             </div>
 
             <div className="col-span-full">
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-white">
-                Email
+                {t('email')}
               </label>
               <div className="mt-2">
                 <input
@@ -140,15 +149,15 @@ const Contacto = () => {
                   value={inputs.email}
                   onChange={handlerInputs}
                   autoComplete="email"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="px-2 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
-              <p className={styles.txtAlert}>{errors.email}</p>
+              <p className={styles.txtAlert}>{errors.email && t('vemail')}</p>
             </div>
 
             <div className="col-span-full">
               <label htmlFor="about" className="block text-sm font-medium leading-6 text-white">
-                Comentarios
+                {t('comentarios')}
               </label>
               <div className="mt-2">
                 <textarea
@@ -158,10 +167,10 @@ const Contacto = () => {
                   value={inputs.comments}
                   onChange={handlerInputs}
                   rows={4}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="px-2 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
-              <p className={styles.txtAlert}>{errors.comments}</p>
+              <p className={styles.txtAlert}>{errors.comments && t('vcomentarios')}</p>
             </div>
           </div>
         </div>
@@ -169,14 +178,14 @@ const Contacto = () => {
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
         <button type="button" className="text-sm font-semibold leading-6 text-white" onClick={handlerClean}>
-          Cancelar
+          {t('cancelar')}
         </button>
         <button
           type="submit"
           className={styles.btnSend}
           onClick={handlerSummit}
         >
-          Enviar
+          {t('enviar')}
         </button>
       </div>
     </form>

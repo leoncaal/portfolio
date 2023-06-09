@@ -4,10 +4,13 @@ import styles from "./Projects.module.css";
 import { useState } from "react";
 import CardProjects from "./CardProjects";
 import DetailProject from "./DetailProject";
+import { useTranslations } from "next-intl";
 
 const Projects = () => {
 
-  const projects = require("./data.json");
+  const t = useTranslations('Proyectos');
+
+  const projects = require("./data-es.json");
   const [showModal, setShowModal] = useState(false);
   const [idClicked, setIdClicked] = useState(0);
 
@@ -21,7 +24,7 @@ const Projects = () => {
       <div className={styles.destination} id="projects"></div>
       <div className={styles.divAux}>
       <div>
-        <h1 className={`${styles.txtTitle} dark:text-black`}>Proyectos</h1>
+        <h1 className={`${styles.txtTitle} dark:text-black`}>{t('titulo')}</h1>
       </div>
       
     <div className={styles.divMain}>
@@ -47,19 +50,19 @@ const Projects = () => {
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                <div className={`${styles.divRest} flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t`}>
                 
                 <DetailProject id={idClicked}/>
 
                 </div>
                 {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                <div className={`${styles.divClose} flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b`}>
                   <button
                     className={styles.btnClose}
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    Close
+                    {t('cerrar')}
                   </button>
                 </div>
               </div>

@@ -1,0 +1,11 @@
+.divMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.iconLang {
+    width: 40px;
+    height: 40px;
+}

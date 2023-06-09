@@ -1,0 +1,34 @@
+{
+    "NavText": {
+      "inicio": "Home",
+      "conoceme": "About Me",
+      "proyectos": "Projects",
+      "contacto": "Contact"
+    },
+    "Perfil": {
+      "titulo": "Front End and Back End Web Developer",
+      "texto": "Computer Engineer, I currently completed the \"Fullstack Developer\" bootcamp at Henry, in which I updated my knowledge in the IT area, this experience allowed me to work individually and in a team putting into practice everything I learned, reaffirming that I enjoy learning from others and share my knowledge.\n\nI have 12 years of experience in television media, working as a switcher, a professional challenge that allowed me to fully develop my creativity, my sense of immediate response and propose quick solutions to problems that arise at the moment.\n\nI am currently looking for an opportunity to continue developing in the IT area and gain more experience.",
+      "descarga": "Download CV"
+    },
+    "Proyectos": {
+      "titulo": "Projects",
+      "cerrar": "Close"
+    },
+    "Contacto": {
+      "titulo": "Contact",
+      "nombre": "Name",
+      "email": "Email",
+      "comentarios": "Comments",
+      "cancelar": "Cancel",
+      "enviar": "Send",
+      "favor": "Please",
+      "ingresa": "Enter all the data",
+      "vnombre": "* Enter your name",
+      "vemail": "* Enter a valid email address",
+      "vcomentarios": "* I would appreciate a comment",
+      "gracias": "Thanks",
+      "exito": "Sent successfully",
+      "disculpa": "Sorry",
+      "error": "Sending failed"
+    }
+  }
