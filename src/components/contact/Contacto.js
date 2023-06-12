@@ -6,6 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 import alrt from 'sweetalert2';
 import {useTranslations} from 'next-intl';
+import { Spinner } from "@material-tailwind/react";
 
 const Contacto = () => {
 
@@ -16,6 +17,8 @@ const Contacto = () => {
     email: "",
     comments: ""
   });
+
+  const [spinner, setSpinner] = useState(false);
 
   const [errors, setErrors] = useState({});
 
@@ -46,9 +49,10 @@ const Contacto = () => {
     if (numErrors === 0 && inputs.name !== "" && inputs.email !== "" && inputs.comments !== "") {
 
       try {
-
+        setSpinner(true);
         const res = await axios.post('/api/handler', inputs);
         if (res.data.message === "Enviado con exito"){
+          setSpinner(false);
           alrt.fire({
           title: t('gracias'),
           text: t('exito'),
@@ -73,6 +77,7 @@ const Contacto = () => {
         
 
       } catch (error) {
+        setSpinner(false);
         if (error.response.data.error === "Fallo el envio"){
           alrt.fire({
           title: t('disculpa'),
@@ -110,11 +115,13 @@ const Contacto = () => {
   };
 
   return (
-    <div className={styles.divFirst}>
+    <div className={styles.divFirst}>{spinner === true ? <div className={`${styles.spinner} flex items-end gap-8 `}>
+      <Spinner className={`${styles.spinnerSize} h-12 w-12`} />
+    </div> : null }
       <div className={styles.destination} id="contacto"></div>
       <div className={styles.divMain}>
-
       <form className={styles.form}>
+      
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
           <h2 className={styles.txtTitle}>{t('titulo')}</h2>
