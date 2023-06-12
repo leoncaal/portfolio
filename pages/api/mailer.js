@@ -20,11 +20,11 @@ export async function sendEmail({ name, email, comments }) {
       <meta name="viewport" content="width=device-width">
       <title>Información de contacto</title>
     </head>
-    <body style="font-family: Arial, sans-serif; background-color: #f2f2f2;">
-      <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: white; border-radius: 30px;">
+    <body style="font-family: Arial, sans-serif; background-color: #ffffff;">
+      <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #9DB2BF ; border-radius: 30px;">
         <header style="text-align: center; margin-bottom: 30px;">
-          <img src="https://res.cloudinary.com/dqvivmiyi/image/upload/v1686297475/Personal/LogoLCA_o5b7ew.png" alt="Logo Leonel" width="100" height="85">
-          <h1 style="font-size: 24px; margin-top: 0;">¡Tienes un nuevo contacto!</h1>
+          <img src="https://res.cloudinary.com/dqvivmiyi/image/upload/v1686297475/Personal/LogoLCA_o5b7ew.png" alt="Logo Leonel" width="100" height="85" style="margin-bottom: 20px";>
+          <h1 style="font-size: 24px; margin-top: 5px;">¡Tienes un nuevo contacto!</h1>
         </header>
         <section style="margin-bottom: 30px;">
           <p style="font-size: 18px; margin-bottom: 10px;">Hola Leonel!</p>
@@ -56,11 +56,11 @@ export async function sendEmail({ name, email, comments }) {
       <meta name="viewport" content="width=device-width">
       <title>Información de contacto</title>
     </head>
-    <body style="font-family: Arial, sans-serif; background-color: #f2f2f2;">
-      <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: white; border-radius: 30px;">
+    <body style="font-family: Arial, sans-serif; background-color: #ffffff;">
+      <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #9DB2BF ; border-radius: 30px;">
         <header style="text-align: center; margin-bottom: 30px;">
-          <img src="https://res.cloudinary.com/dqvivmiyi/image/upload/v1686297475/Personal/LogoLCA_o5b7ew.png" alt="Logo Leonel" width="100" height="85">
-          <h1 style="font-size: 24px; margin-top: 0;">He recibido tu email!</h1>
+          <img src="https://res.cloudinary.com/dqvivmiyi/image/upload/v1686297475/Personal/LogoLCA_o5b7ew.png" alt="Logo Leonel" width="100" height="85" style="margin-bottom: 20px">
+          <h1 style="font-size: 24px; margin-top: 5px;">He recibido tu email!</h1>
         </header>
         <section style="margin-bottom: 30px;">
           <p style="font-size: 18px; margin-bottom: 10px;">Hola ${name}!</p>
