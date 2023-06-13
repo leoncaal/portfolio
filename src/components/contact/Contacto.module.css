@@ -1,5 +1,6 @@
 .divFirst {
     margin: 1%;
+    position: relative;
 }
 .divMain {
     display: flex;
@@ -40,13 +41,13 @@
     border: 0;
 }
 .spinner {
-    
     display: flex;
     justify-content: center;
     position: absolute;
     right: 0;
     left: 0;
-    height: 45%;
+    height: 100%;
+    align-items: center;
 }
 .spinnerSize {
     width: 8rem;
