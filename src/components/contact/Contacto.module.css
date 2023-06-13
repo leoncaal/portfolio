@@ -48,6 +48,7 @@
     left: 0;
     height: 100%;
     align-items: center;
+    z-index: 1;
 }
 .spinnerSize {
     width: 8rem;
