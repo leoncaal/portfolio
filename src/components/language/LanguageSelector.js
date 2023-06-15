@@ -1,6 +1,7 @@
 import styles from "./LanguageSelector.module.css";
 import Link from 'next-intl/link';
 import { useLocale } from "next-intl";
+import Image from "next/image";
 
 const LanguageSelector = () => {
 
@@ -16,9 +17,9 @@ const LanguageSelector = () => {
         } */}
        {loc === "en" ?
         <Link href="/" locale="es" value="es">
-            <img src="/assets/images/iconos/esp.png" alt="esp" className={styles.iconLang} /></Link> 
+            <Image src="/assets/images/iconos/esp.png" alt="esp" className={styles.iconLang} width="40" height="40"/></Link> 
             : <Link href="/" locale="en" value="en">
-            <img src="/assets/images/iconos/eng.png" alt="eng" className={styles.iconLang} />
+            <Image src="/assets/images/iconos/eng.png" alt="eng" className={styles.iconLang} width="40" height="40"/>
         </Link>
         }
 
