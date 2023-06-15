@@ -48,7 +48,7 @@ export async function sendEmail({ name, email, comments }) {
   const mailOptionsRes = {
     from: "leoncaal@gmail.com",
     to: email,
-    subject: "Gracias por visitar mi sitio web",
+    subject: "Gracias por visitar mi perfil",
     html: `<!DOCTYPE html>
     <html>
     <head>
@@ -64,13 +64,13 @@ export async function sendEmail({ name, email, comments }) {
         </header>
         <section style="margin-bottom: 30px;">
           <p style="font-size: 18px; margin-bottom: 10px;">Hola ${name}!</p>
-          <p style="font-size: 16px; margin-bottom: 10px;">Te agradezco que hayas invertido un poco de tu tiempo en dejar un comentario.</p>
-          <p style="font-size: 16px; margin-bottom: 10px;">A la brevedad posible te contactare. Estos son los datos que me enviaste:</p>
+          <p style="font-size: 16px; margin-bottom: 10px;">Gracias por el interés a mi perfil.</p>
+          <p style="font-size: 16px; margin-bottom: 10px;">Te contacto lo antes posible, de acuerdo con los datos que me compartiste:</p>
           <ul style="font-size: 16px; margin-bottom: 10px; list-style: none; padding: 0;">
             <li><strong>Nombre:</strong> ${name}</li>
             <li><strong>Correo electrónico:</strong> ${email}</li>
             <li><strong>Mensaje:</strong></li>
-            <li style="margin-left: 20px;">${comments}</li>
+            <li style="margin-left: 70px;">${comments}</li>
           </ul>
         </section>
         <footer style="text-align: center;">

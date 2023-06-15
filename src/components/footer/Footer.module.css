@@ -24,6 +24,10 @@
     border-radius: 10px;
     margin: 0px 15px 0px 0px;
 }
+.img:hover {
+    opacity: 80%;
+    transform: scale(1.1);
+}
 @media (max-width: 640px) {
     .divMain {
         padding: 4% 4% 4% 4%;
