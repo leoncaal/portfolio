@@ -116,7 +116,7 @@ const Contacto = () => {
 
   return (
     <div className={styles.divFirst}>{spinner === "true" ? <div className={`${styles.spinner} flex items-end gap-8 backdrop-brightness-50 backdrop-opacity-70`}>
-      <Spinner color="gray" className={`${styles.spinnerSize} h-12 w-12`} />
+      <Spinner className={`${styles.spinnerSize} h-12 w-12`} />
     </div>: null}
       <div className={styles.destination} id="contacto"></div>
       <div className={styles.divMain}>
