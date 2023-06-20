@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className={styles.divFirst}>
       <div className={styles.divMain}>
-        <h1 className={styles.txtName}>© 2023 Leonel Castañeda</h1>
+        <h1 className={`${styles.txtName} dark:text-white`}>© 2023 Leonel Castañeda</h1>
         <Link href="https://github.com/leoncaal" target="_blank">
           <Image className={styles.img} src={git} alt="GitHub" />
         </Link>
