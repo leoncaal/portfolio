@@ -50,13 +50,13 @@ const Projects = () => {
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
-                <div className={`${styles.divRest} flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t`}>
+                <div className={`${styles.divRest} flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t dark:bg-[#27374D]`}>
                 
                 <DetailProject id={idClicked}/>
 
                 </div>
                 {/*footer*/}
-                <div className={`${styles.divClose} flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b`}>
+                <div className={`${styles.divClose} flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b dark:bg-[#27374D]`}>
                   <button
                     className={styles.btnClose}
                     type="button"

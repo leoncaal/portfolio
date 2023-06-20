@@ -1,0 +1,16 @@
+.divMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+.iconTheme {
+    width: 30px;
+    height: 30px;
+}
+.iconTheme:hover {
+    opacity: 90%;
+    transform: scale(1.1);
+}

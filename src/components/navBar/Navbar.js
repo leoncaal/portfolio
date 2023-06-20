@@ -5,6 +5,7 @@ import styles from "./Navbar.module.css";
 import logo from "../../../public/assets/images/LogoLCA.png";
 import Image from "next/image";
 import LanguageSelector from "../language/LanguageSelector";
+import Theme from '../theme/Theme';
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -77,6 +78,7 @@ const Navbar = () => {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
     
                 <LanguageSelector />
+                <Theme />
 
                 {/* Profile dropdown */}
                 {/* <Menu as="div" className="relative ml-3">

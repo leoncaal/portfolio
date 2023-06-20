@@ -4,7 +4,7 @@ import Image from "next/image";
 const CardProjects = (props) => {
   
   return (
-    <div className={`${styles.divMain} w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700`}>
+    <div className={`${styles.divMain} w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-[#526D82] dark:border-gray-700`}>
         
             <Image className={`${styles.img} p-3 rounded-t-lg`} src={props.image[0]} alt={props.name} height="100"
                     width="400" />
