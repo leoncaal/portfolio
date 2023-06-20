@@ -1,7 +1,7 @@
 .divMain {
     display: flex;
     flex-direction: column;
-    margin: 0px 40px 40px 40px;
+    margin: 0px 20px 20px 20px;
     width: 100%;
     height: 100%;
     padding-bottom: 1%;
@@ -50,6 +50,13 @@
 @media (max-width: 640px){
     .divMain {
         margin: 20px 0px 20px 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 850px){
+    .divMain {
+        margin: 0px 10px 10px 10px;
         width: 100%;
         height: 100%;
     }
