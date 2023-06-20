@@ -18,15 +18,15 @@
 
   --quaternary-color-500: #DDE6ED ;
 
-  --backgroundModalDia: #DDE6ED ;
+/*   --backgroundModalDia: #DDE6ED ;
 
-  --backgroundCardDia: #ffffff ;
+  --backgroundCardDia: #ffffff ; */
 
 
 
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -35,4 +35,4 @@
     --backgroundCardDia: #526D82 ;
   }
 }
-
+ */
