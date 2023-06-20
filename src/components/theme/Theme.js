@@ -6,10 +6,13 @@ const Theme = () => {
   const [theme, setTheme] = useState(null);
 
   useEffect(() => {
+    console.log(window.matchMedia('(prefers-color-scheme: dark)').matches);
     if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+      localStorage.setItem("value", "dark");
       setTheme('dark');
     }
     else {
+      localStorage.setItem("value", "light");
       setTheme('light');
     }
   }, [])

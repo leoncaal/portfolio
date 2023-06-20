@@ -18,10 +18,10 @@
     width: 100%;
 }
 .divRest {
-    background-color: var(--backgroundModalDia);
+    background-color: #DDE6ED ;
 }
 .divClose {
-    background-color: var(--backgroundModalDia);
+    background-color: #DDE6ED ;
 }
 .btnCard {
     display: flex;
@@ -65,11 +65,3 @@
         margin-top:-64px;
     }
 }
-@media (prefers-color-scheme: dark) {
-    .divRest {
-        background-color: var(--backgroundModalDia);
-    }
-    .divClose {
-        background-color: var(--backgroundModalDia);
-    }
-  }
