@@ -22,7 +22,7 @@ const DetailProject = (props) => {
   return (
     <div className={`${styles.divMain} dark:bg-[#27374D]`}>
         <div className={styles.divTitle}>
-            <h1 className="dark:text-white">{datos[0].name}</h1>
+            <h1 className="text-white dark:text-white">{datos[0].name}</h1>
             </div>
         <br key="1"/>
         <br key="2"/>
@@ -44,11 +44,11 @@ const DetailProject = (props) => {
     <div>
     <br />
     <br />
-    <h1 className={`${styles.txtHeaders} dark:text-white`}>{datos[0].descriptionD}</h1>
+    <h1 className={`${styles.txtHeaders} text-white dark:text-white`}>{datos[0].descriptionD}</h1>
     <br />
-    <p className={`${styles.txtContent} dark:text-white`}>{nl2br(datos[0].description)}</p>
+    <p className={`${styles.txtContent} text-white dark:text-white`}>{nl2br(datos[0].description)}</p>
     <br />
-    <ul className="list-disc pl-4 dark:text-white">
+    <ul className="list-disc pl-4 text-white dark:text-white">
         {datos[0].bullets.map(bullet => {
             return(
                 <li key={bullet}>{bullet}</li>
@@ -59,7 +59,7 @@ const DetailProject = (props) => {
     </div>
 
     <div className={styles.divTech}>
-    <h1 className={`${styles.txtHeaders} dark:text-white`}>{datos[0].technologiesD}</h1>
+    <h1 className={`${styles.txtHeaders} text-white dark:text-white`}>{datos[0].technologiesD}</h1>
   <Carousel className="rounded-xl" autoplay={true} autoplayDelay={2000} loop={true}>
 
 

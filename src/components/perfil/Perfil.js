@@ -14,11 +14,11 @@ const Perfil = () => {
     <div className={styles.divFirst}>
       <div className={styles.divMain}>
         <div className={styles.divTxtPerfil}>
-          <h1 className={`${styles.txtTitle} dark:text-white`}>
+          <h1 className={`${styles.txtTitle} text-black dark:text-white`}>
             {t('titulo')}
           </h1>
           <br />
-          <p className={`${styles.txtText} dark:text-white`}>{nl2br(t('texto'))}</p>
+          <p className={`${styles.txtText} text-black  dark:text-white`}>{nl2br(t('texto'))}</p>
           <br /><br />
           <a href="/assets/docs/CV_Leonel_Castaneda_Developer.pdf" download ><button className={styles.btnCv}>{t('descarga')}</button></a>
         </div>
