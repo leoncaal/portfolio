@@ -11,7 +11,7 @@ const CardProjects = (props) => {
        
         <div className={`${styles.divName} px-5 pb-5`}>
            
-                <h5 className="text-xl font-semibold tracking-tight text-white dark:text-white">{props.name}</h5>
+                <h5 className="text-xl font-semibold tracking-tight text-black dark:text-white">{props.name}</h5>
        
         </div>
     </div>
