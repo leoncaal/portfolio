@@ -42,9 +42,9 @@
     shape-outside: circle(50%);
     padding-right: 4%;
     font-size: 20px;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-name: animate-fade;
-    animation-delay: 0.2s;
+    animation-delay: 0.8s;
     animation-fill-mode: backwards;
 }
 .txtTitle {
