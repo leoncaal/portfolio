@@ -194,7 +194,7 @@ const Contacto = () => {
         <button
           ref={myRef2}
           type="submit"
-          className={`${styles.btnSend} ${formIsVisible2 ? styles.animatezoom : styles.animatezoomout}`}
+          className={`${formIsVisible2 ? styles.animatezoom : styles.animatezoomout} flex justify-center rounded-full bg-[#526D82] px-9 py-1.5 text-sm font-semibold transition duration-700 leading-6 text-white shadow-sm hover:bg-[#9DB2BF] transform hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
           onClick={handlerSummit}
         >
           {t('enviar')}
