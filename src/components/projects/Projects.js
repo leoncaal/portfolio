@@ -5,12 +5,14 @@ import { useState } from "react";
 import CardProjects from "./CardProjects";
 import DetailProject from "./DetailProject";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 const Projects = () => {
 
   const t = useTranslations('Proyectos');
+  const loc = useLocale();
 
-  const projects = require("./data-es.json");
+  let projects = null; 
   const [showModal, setShowModal] = useState(false);
   const [idClicked, setIdClicked] = useState(0);
 
@@ -18,6 +20,13 @@ const Projects = () => {
     setIdClicked(value);
     setShowModal(true);
   };
+
+  if(loc === "es"){
+    projects = require("./data-es.json");
+  }
+  if(loc === "en"){
+    projects = require("./data-en.json");
+  }
 
   return (
     <div className={styles.divFirst} >

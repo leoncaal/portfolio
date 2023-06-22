@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Paises del Mundo",
+        "name": "Paises",
         "description": "Fue el primer proyecto que realice de forma individual, guarda en la base de datos prostgres la informacón consumida de una api externa para despues ser consumida de dicha DB. Fue un proyecto muy desafiante ya que en esos momentos aun no contaba con los suficientes conocimientos lo cual me llevo a investigar muchas cosas. \n\n Tiene como objetivo mostrar todos los paises del mundo asi como su información a mas detalle. \n\n A continuación enlisto algunas de sus funcionlidades: ",
         "bullets": ["Muestra los paises contenidos en la base de datos.", "Detalle de la información de cada pais.", "Buscador de paises.", "Ordenamiento de los paises de forma alfabetica o por población.", "Filtrado por Continente y por Actividades.", "Formulario para agregar actividades a uno o mas paises a la vez."],
         "image": ["/assets/images/projects/countries01.png", 

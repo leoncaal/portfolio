@@ -5,8 +5,13 @@ import Image from "next/image";
 import photo from "../../../public/assets/images/IMG_8054.jpg";
 import nl2br from "react-nl2br";
 import {useTranslations} from 'next-intl';
+import { useInView } from "react-intersection-observer";
 
 const Perfil = () => {
+
+  const { ref: myRef, inView: perfilIsVisible } = useInView();
+  const { ref: myRef2, inView: perfilIsVisible2 } = useInView();
+  const { ref: myRef3, inView: perfilIsVisible3 } = useInView();
 
   const t = useTranslations('Perfil');
 
@@ -14,15 +19,15 @@ const Perfil = () => {
     <div className={styles.divFirst}>
       <div className={styles.divMain}>
         <div className={styles.divTxtPerfil}>
-          <h1 className={`${styles.txtTitle} text-black dark:text-white`}>
+          <h1 className={`${styles.txtTitle} ${perfilIsVisible ? styles.animatefade : styles.animatefadeout} text-black dark:text-white`}>
             {t('titulo')}
           </h1>
           <br />
-          <p className={`${styles.txtText} text-black  dark:text-white`}>{nl2br(t('texto'))}</p>
+          <p ref={myRef} className={`${styles.txtText} ${perfilIsVisible ? styles.animatefade : styles.animatefadeout} text-black  dark:text-white`}>{nl2br(t('texto'))}</p>
           <br /><br />
-          <a href="/assets/docs/CV_Leonel_Castaneda_Developer.pdf" download ><button className={styles.btnCv}>{t('descarga')}</button></a>
+          <a href="/assets/docs/CV_Leonel_Castaneda_Developer.pdf" download ><button ref={myRef3} className={`${styles.btnCv} ${perfilIsVisible3 ? styles.animatezoom : styles.animatezoomout}`}>{t('descarga')}</button></a>
         </div>
-        <Image className={styles.imgPhoto} src={photo} alt="Leonel Catañeda" />
+        <Image ref={myRef2} className={`${styles.imgPhoto} ${perfilIsVisible2 ? styles.animatezoom : styles.animatezoomout} `} src={photo} alt="Leonel Catañeda" />
       </div>
     </div>
   );

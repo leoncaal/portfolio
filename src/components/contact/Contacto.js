@@ -7,10 +7,13 @@ import axios from "axios";
 import alrt from 'sweetalert2';
 import {useTranslations} from 'next-intl';
 import { Spinner } from "@material-tailwind/react";
+import { useInView } from "react-intersection-observer";
 
 const Contacto = () => {
 
   const t = useTranslations('Contacto');
+  const { ref: myRef, inView: formIsVisible } = useInView();
+  const { ref: myRef2, inView: formIsVisible2 } = useInView();
 
   const [inputs, setInputs] = useState({
     name: "",
@@ -121,12 +124,12 @@ const Contacto = () => {
     </div> : null } 
       <div className={styles.destination} id="contacto"></div>
       <div className={styles.divMain}>
-      <form className={styles.form}>
+      <form className={`${styles.form}`}>
       
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
           <h2 className={styles.txtTitle}>{t('titulo')}</h2>
-          <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+          <div ref={myRef} className={`${formIsVisible ? styles.animatefade : styles.animatefadeout} "mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"`}>
             <div className="col-span-full">
               <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-white">
                 {t('nombre')}
@@ -185,12 +188,13 @@ const Contacto = () => {
       </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <button type="button" className="text-sm font-semibold leading-6 text-white" onClick={handlerClean}>
+        <button ref={myRef2} type="button" className={`${formIsVisible2 ? styles.animatezoom : styles.animatezoomout} "text-sm font-semibold leading-6 text-white"`} onClick={handlerClean}>
           {t('cancelar')}
         </button>
         <button
+          ref={myRef2}
           type="submit"
-          className={styles.btnSend}
+          className={`${styles.btnSend} ${formIsVisible2 ? styles.animatezoom : styles.animatezoomout}`}
           onClick={handlerSummit}
         >
           {t('enviar')}
