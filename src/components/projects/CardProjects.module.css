@@ -41,6 +41,9 @@
     }
 }
 @keyframes animate-fadeout {
+    100% {
+        opacity: 1;
+      }
     0% {
       opacity: 0;
     }
@@ -78,6 +81,9 @@
     -webkit-animation-fill-mode: backwards;
 }
 @keyframes animate-zoomout {
+    100% {
+        scale: 1;
+      }
     0% {
       scale: 0;
     }

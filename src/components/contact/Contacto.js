@@ -188,7 +188,7 @@ const Contacto = () => {
       </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <button ref={myRef2} type="button" className={`${formIsVisible2 ? styles.animatezoom : styles.animatezoomout} "text-sm font-semibold leading-6 text-white"`} onClick={handlerClean}>
+        <button ref={myRef2} type="button" className={`${styles.btnCancelar} ${formIsVisible2 ? styles.animatezoom : styles.animatezoomout} "text-sm font-semibold leading-6"`} onClick={handlerClean}>
           {t('cancelar')}
         </button>
         <button
