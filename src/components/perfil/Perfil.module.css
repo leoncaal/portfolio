@@ -42,10 +42,7 @@
     shape-outside: circle(50%);
     padding-right: 4%;
     font-size: 20px;
-    animation-duration: 1s;
-    animation-name: animate-fade;
-    animation-delay: 0.8s;
-    animation-fill-mode: backwards;
+
 }
 .txtTitle {
     font-size: 30px;
@@ -57,6 +54,28 @@
 .txtText {
     font-size: 20px;
 }
+.animatefade {
+    animation-duration: 1.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+.animatefadeout {
+    animation-duration: 1.5s;
+    animation-name: animate-fadeout;
+    animation-fill-mode: backwards;
+}
+.animatezoom {
+    animation-name: animate-zoom;
+    animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+.animatezoomout {
+    animation-name: animate-zoomout;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+}
 @keyframes animate-fade {
     0% {
       opacity: 0;
@@ -65,6 +84,30 @@
       opacity: 1;
     }
 }  
+@keyframes animate-fadeout {
+    100% {
+      opacity: 0;
+    }
+    0% {
+      opacity: 0;
+    }
+}
+@keyframes animate-zoom {
+    0% {
+      scale: 0;
+    }
+    100% {
+      scale: 1;
+    }
+} 
+@keyframes animate-zoomout {
+    100% {
+      scale: 1;
+    }
+    0% {
+      scale: 0;
+    }
+}    
 @media (max-width: 1300px) {
     .imgPhoto {
         width: 400px; 

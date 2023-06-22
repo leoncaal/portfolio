@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Paises del Mundo",
+        "name": "Countries",
         "description": "It was the first project that I carried out individually, it saves in the prostgres database the information consumed from an external api to later be consumed from said DB. It was a very challenging project since at that time I still did not have enough knowledge, which led me to investigate many things. \n\n Its objective is to show all the countries of the world as well as their information in more detail. \n\n Below I list some of its features: ",
         "bullets": ["Shows the countries contained in the database.", "Details of the information of each country.", "Country search engine.", "Ordering of countries alphabetically or by population.", "Filtered by Continent and by Activities.", "Form to add activities to one or more countries at the same time."],
         "image": ["/assets/images/projects/countries01.png", 

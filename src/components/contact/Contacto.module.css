@@ -54,6 +54,59 @@
     width: 8rem;
     height: 8rem;
 }
+.animatefade {
+    animation-name: animate-fade;
+    animation-duration: 0.5s;
+    animation-delay: .4s;
+    animation-fill-mode: backwards;
+}
+@keyframes animate-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.animatefadeout {
+    animation-name: animate-fadeout;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+}
+@keyframes animate-fadeout {
+    100% {
+      opacity: 0;
+    }
+    0% {
+      opacity: 0;
+    }
+}
+.animatezoom {
+    animation-name: animate-zoom;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+}
+@keyframes animate-zoom {
+    0% {
+      scale: 0;
+    }
+    100% {
+      scale: 1;
+    }
+}  
+.animatezoomout {
+    animation-name: animate-zoomout;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+}
+@keyframes animate-zoomout {
+    100% {
+      scale: 1;
+    }
+    0% {
+      scale: 0;
+    }
+}  
 @media (max-width: 1000px) {
     .form {
         width: 90%;
