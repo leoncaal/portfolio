@@ -85,9 +85,6 @@
     }
 }  
 @keyframes animate-fadeout {
-    100% {
-      opacity: 0;
-    }
     0% {
       opacity: 0;
     }
@@ -101,9 +98,7 @@
     }
 } 
 @keyframes animate-zoomout {
-    100% {
-      scale: 1;
-    }
+
     0% {
       scale: 0;
     }
