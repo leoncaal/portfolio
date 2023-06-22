@@ -57,7 +57,7 @@
 .animatefade {
     animation-name: animate-fade;
     animation-duration: 0.5s;
-    animation-delay: .4s;
+    animation-delay: .6s;
     animation-fill-mode: backwards;
 }
 @keyframes animate-fade {
@@ -74,16 +74,13 @@
     animation-fill-mode: backwards;
 }
 @keyframes animate-fadeout {
-    100% {
-      opacity: 0;
-    }
     0% {
       opacity: 0;
     }
 }
 .animatezoom {
     animation-name: animate-zoom;
-    animation-duration: 0.5s;
+    animation-duration: 0.6s;
     animation-fill-mode: backwards;
 }
 @keyframes animate-zoom {
@@ -100,9 +97,6 @@
     animation-fill-mode: backwards;
 }
 @keyframes animate-zoomout {
-    100% {
-      scale: 1;
-    }
     0% {
       scale: 0;
     }
