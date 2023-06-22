@@ -24,10 +24,6 @@
       -moz-box-shadow: 10px 10px 50px #ccc;
       -webkit-box-shadow: 10px 10px 50px #ccc;
       -khtml-box-shadow: 10px 10px 50px #ccc;
-      animation-duration: 0.5s;
-      animation-name: animate-fade;
-      animation-delay: 0.4s;
-      animation-fill-mode: backwards;
 }
 .imgLogo {
     width: 60px;
@@ -42,7 +38,6 @@
     shape-outside: circle(50%);
     padding-right: 4%;
     font-size: 20px;
-
 }
 .txtTitle {
     font-size: 30px;
@@ -98,7 +93,6 @@
     }
 } 
 @keyframes animate-zoomout {
-
     0% {
       scale: 0;
     }
