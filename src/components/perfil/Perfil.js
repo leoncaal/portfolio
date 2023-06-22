@@ -15,6 +15,7 @@ const Perfil = () => {
 
   const t = useTranslations('Perfil');
 
+  console.log(perfilIsVisible2);
   return (
     <div className={styles.divFirst}>
       <div className={styles.divMain}>
