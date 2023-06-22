@@ -49,38 +49,28 @@
 .animatefade {
     animation-duration: 1.5s;
     animation-name: animate-fade;
-    animation-delay: 0.2s;
+    animation-delay: 1s;
     animation-fill-mode: backwards;
-    -webkit-animation-name: animate-fade;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-delay: 0.2s;
-    -webkit-animation-fill-mode: backwards;
+
 }
 .animatefadeout {
     animation-duration: 1.5s;
     animation-name: animate-fadeout;
     animation-fill-mode: backwards;
-    -webkit-animation-name: animate-fadeout;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-fill-mode: backwards;
+
 }
 .animatezoom {
     animation-name: animate-zoom;
     animation-duration: 0.5s;
-    animation-delay: 0.2s;
+    animation-delay: 1s;
     animation-fill-mode: backwards;
-    -webkit-animation-name: animate-zoom;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-delay: 0.2s;
-    -webkit-animation-fill-mode: backwards;
+
 }
 .animatezoomout {
     animation-name: animate-zoomout;
     animation-duration: 0.5s;
     animation-fill-mode: backwards;
-    -webkit-animation-name: animate-zoomout;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-fill-mode: backwards;
+
 }
 @keyframes animate-fade {
     0% {
