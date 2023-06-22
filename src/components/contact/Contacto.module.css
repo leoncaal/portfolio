@@ -29,9 +29,6 @@
     font-weight:600;
     color: white;
 }
-.btnSend {
-    @apply flex justify-center rounded-full bg-[#526D82] px-9 py-1.5 text-sm font-semibold transition duration-700 leading-6 text-white shadow-sm hover:bg-[#9DB2BF] transform hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
-}
 .txtAlert {
     font-size: 12px;
     padding-top: 15px;
@@ -58,6 +55,11 @@
     animation-name: animate-fade;
     animation-duration: 0.5s;
     animation-delay: .6s;
+    animation-fill-mode: backwards;
+    -webkit-animation-name: animate-fade;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-delay: .6s;
+    -webkit-animation-fill-mode: backwards;
 }
 @keyframes animate-fade {
     0% {
@@ -70,6 +72,10 @@
 .animatefadeout {
     animation-name: animate-fadeout;
     animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    -webkit-animation-name: animate-fadeout;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: backwards;
 }
 @keyframes animate-fadeout {
     0% {
@@ -79,6 +85,10 @@
 .animatezoom {
     animation-name: animate-zoom;
     animation-duration: 0.6s;
+    animation-fill-mode: backwards;
+    -webkit-animation-name: animate-zoom;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-fill-mode: backwards;
 }
 @keyframes animate-zoom {
     0% {
@@ -91,6 +101,10 @@
 .animatezoomout {
     animation-name: animate-zoomout;
     animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    -webkit-animation-name: animate-zoomout;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: backwards;
 }
 @keyframes animate-zoomout {
     0% {

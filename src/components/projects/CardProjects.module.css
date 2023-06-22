@@ -26,7 +26,11 @@
     animation-name: animate-fade;
     animation-duration: 0.5s;
     animation-delay: .7s;
-
+    animation-fill-mode: backwards;
+    -webkit-animation-name: animate-fade;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-delay: .7s;
+    -webkit-animation-fill-mode: backwards;
 }
 @keyframes animate-fade {
     50% {
@@ -36,10 +40,26 @@
       opacity: 1;
     }
 }
+@keyframes animate-fadeout {
+    0% {
+      opacity: 0;
+    }
+}
+.animatefadeout {
+    animation-name: animate-fadeout;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    -webkit-animation-name: animate-fade;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: backwards;
+}
 .animatezoom {
     animation-name: animate-zoom;
     animation-duration: 0.5s;
-
+    animation-fill-mode: backwards;
+    -webkit-animation-name: animate-zoom;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: backwards;
 }
 @keyframes animate-zoom {
     0% {
@@ -52,7 +72,10 @@
 .animatezoomout {
     animation-name: animate-zoomout;
     animation-duration: 0.5s;
-
+    animation-fill-mode: backwards;
+    -webkit-animation-name: animate-zoomout;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: backwards;
 }
 @keyframes animate-zoomout {
     0% {

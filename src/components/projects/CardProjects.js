@@ -9,7 +9,7 @@ const CardProjects = (props) => {
   return (
     <div ref={myRef} className={`${styles.divMain} ${cardIsVisible ? styles.animatezoom : styles.animatezoomout} w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-[#526D82] dark:border-gray-700`}>
         
-            <Image ref={myRef} className={`${styles.img} ${cardIsVisible ? styles.animatefade : ''} p-3 rounded-t-lg`} src={props.image[0]} alt={props.name} height="100"
+            <Image ref={myRef} className={`${styles.img} ${cardIsVisible ? styles.animatefade : styles.animatefadeout} p-3 rounded-t-lg`} src={props.image[0]} alt={props.name} height="100"
                     width="400" />
        
         <div className={`${styles.divName} px-5 pb-5`}>

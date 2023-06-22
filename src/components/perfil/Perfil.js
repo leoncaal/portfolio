@@ -25,7 +25,7 @@ const Perfil = () => {
           <br />
           <p ref={myRef} className={`${styles.txtText} ${perfilIsVisible ? styles.animatefade : styles.animatefadeout} text-black  dark:text-white`}>{nl2br(t('texto'))}</p>
           <br /><br />
-          <a href="/assets/docs/CV_Leonel_Castaneda_Developer.pdf" download ><button ref={myRef3} className={`${styles.btnCv} ${perfilIsVisible3 ? styles.animatezoom : styles.animatezoomout}`}>{t('descarga')}</button></a>
+          <a href="/assets/docs/CV_Leonel_Castaneda_Developer.pdf" download ><button ref={myRef3} className={`${perfilIsVisible3 ? styles.animatezoom : styles.animatezoomout} flex w-full justify-center rounded-full bg-[#526D82] px-9 py-1.5 text-sm font-semibold transition duration-700 leading-6 text-white shadow-sm hover:bg-[#27374D] transform hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;`}>{t('descarga')}</button></a>
         </div>
         <Image ref={myRef2} className={`${styles.imgPhoto} ${perfilIsVisible2 ? styles.animatezoom : styles.animatezoomout} `} src={photo} alt="Leonel Catañeda" />
       </div>
