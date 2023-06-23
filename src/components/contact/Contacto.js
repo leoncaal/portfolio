@@ -129,7 +129,7 @@ const Contacto = () => {
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
           <h2 className={styles.txtTitle}>{t('titulo')}</h2>
-          <div ref={myRef} className={`${formIsVisible ? styles.animatefade : styles.animatefadeout} "mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"`}>
+          <div ref={myRef} className={`${formIsVisible ? styles.animatefade : styles.opacity} "mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"`}>
             <div className="col-span-full">
               <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-white">
                 {t('nombre')}
@@ -188,13 +188,13 @@ const Contacto = () => {
       </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <button ref={myRef2} type="button" className={`${styles.btnCancelar} ${formIsVisible2 ? styles.animatezoom : styles.animatezoomout} "text-sm font-semibold leading-6"`} onClick={handlerClean}>
+        <button ref={myRef2} type="button" className={`${styles.btnCancelar} ${formIsVisible2 ? styles.animatezoom : styles.opacity} "text-sm font-semibold leading-6"`} onClick={handlerClean}>
           {t('cancelar')}
         </button>
         <button
           ref={myRef2}
           type="submit"
-          className={`${formIsVisible2 ? styles.animatezoom : styles.animatezoomout} flex justify-center rounded-full bg-[#526D82] px-9 py-1.5 text-sm font-semibold transition duration-700 leading-6 text-white shadow-sm hover:bg-[#9DB2BF] transform hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
+          className={`${formIsVisible2 ? styles.animatezoom : styles.opacity} flex justify-center rounded-full bg-[#526D82] px-9 py-1.5 text-sm font-semibold transition duration-700 leading-6 text-white shadow-sm hover:bg-[#9DB2BF] transform hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
           onClick={handlerSummit}
         >
           {t('enviar')}
