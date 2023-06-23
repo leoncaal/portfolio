@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "name": "Paises",
-        "description": "Fue el primer proyecto que realice de forma individual, guarda en la base de datos prostgres la informacón consumida de una api externa para despues ser consumida de dicha DB. Fue un proyecto muy desafiante ya que en esos momentos aun no contaba con los suficientes conocimientos lo cual me llevo a investigar muchas cosas. \n\n Tiene como objetivo mostrar todos los paises del mundo asi como su información a mas detalle. \n\n A continuación enlisto algunas de sus funcionlidades: ",
-        "bullets": ["Muestra los paises contenidos en la base de datos.", "Detalle de la información de cada pais.", "Buscador de paises.", "Ordenamiento de los paises de forma alfabetica o por población.", "Filtrado por Continente y por Actividades.", "Formulario para agregar actividades a uno o mas paises a la vez."],
+        "name": "Países",
+        "description": "Fue el primer proyecto que realice de forma individual, guarda en la base de datos prostgres la información consumida de una api externa para después ser consumida de dicha DB. Fue un proyecto muy desafiante ya que en esos momentos aun no contaba con los suficientes conocimientos lo cual me llevo a investigar muchas cosas. \n\n Tiene como objetivo mostrar todos los países del mundo así como su información a mas detalle. \n\n A continuación enlisto algunas de sus funcionalidades: ",
+        "bullets": ["Muestra los países contenidos en la base de datos.", "Detalle de la información de cada país.", "Buscador de países.", "Ordenamiento de los países de forma alfabetica o por población.", "Filtrado por Continente y por Actividades.", "Formulario para agregar actividades a uno o mas países a la vez."],
         "image": ["/assets/images/projects/countries01.png", 
             "/assets/images/projects/countries02.png", 
             "/assets/images/projects/countries03.png", 
@@ -19,7 +19,7 @@
         "id": 2,
         "name": "Visit Matina",
         "description": "El sitio VisitMatina fue un proyecto realizado en equipo en el cual se trabaja en conjunto con una alianza turística de Matina, Costa Rica. Tiene como objetivo incentivar el turismo local e internacional en la zona. A lo largo del proyecto se trabajo bajo la metodología SCRUM.\n\nAl termino del proyecto se le entrego al cliente el sitio el cual comenta que será de gran utilidad para promocionar los productos y servicios de la región. \n\n Funcionalidades:",
-        "bullets": ["Creacion de cada negocio dentro del sitio.", "Registro de usuarios y autenticación con Google.", "Integración de sistema de reviews personalizado para cada negocio.", "Blog para publicar noticias de la región.", "Alojamiento de archivos multimedia en Cloudinary.", "Pasarela de pagos con Paypal.", "Contacto de cada negocio con nodemailer.", "Dashboard de administrador.", "Operaciones para dar de alta negocios, productos, paquetes turisticos y noticias del blog."],
+        "bullets": ["Creación de cada negocio dentro del sitio.", "Registro de usuarios y autenticación con Google.", "Integración de sistema de reviews personalizado para cada negocio.", "Blog para publicar noticias de la región.", "Alojamiento de archivos multimedia en Cloudinary.", "Pasarela de pagos con Paypal.", "Contacto de cada negocio con nodemailer.", "Dashboard de administrador.", "Operaciones para dar de alta negocios, productos, paquetes turísticos y noticias del blog."],
         "image": ["/assets/images/projects/visit01.png", 
             "/assets/images/projects/visit02.png", 
             "/assets/images/projects/visit03.png", 
@@ -34,8 +34,8 @@
     {
         "id": 3,
         "name": "Portfolio",
-        "description": "Este sitio web es para mostrar los proyectos que he realizado y que las peronas que ingresen a dicho sitio conozcan un poco mas de mi.\n\nAdemas de utilizar las tecnologias que viene trabajando a lo largo del bootcamp de Henry, tambien me di a la tarea de utilizar Next.js con el fin de mantenerme actualizado.\n\nAlgunas de sus funcionalidades son:",
-        "bullets": ["Breve reseña acerca de mi y permite decargar mi hoja de vida.", "Muestra los proyectos que he realizado.", "Formulario de contacto.", "Links hacia mi Github, LinkedIn e Email.", "Traducción del sitio Español - Ingles."],
+        "description": "Este sitio web es para mostrar los proyectos que he realizado y que las personas que ingresen a dicho sitio conozcan un poco mas de mi.\n\nAdemas de utilizar las tecnologías que viene trabajando a lo largo del bootcamp de Henry, también me di a la tarea de utilizar Next.js con el fin de mantenerme actualizado.\n\nAlgunas de sus funcionalidades son:",
+        "bullets": ["Breve reseña acerca de mi y permite descargar mi hoja de vida.", "Muestra los proyectos que he realizado.", "Formulario de contacto.", "Links hacia mi Github, LinkedIn e Email.", "Traducción del sitio Español - Ingles.", "Modo oscuro."],
         "image": ["/assets/images/projects/portfolio01.png", 
             "/assets/images/projects/portfolio02.png", 
             "/assets/images/projects/portfolio03.png", 

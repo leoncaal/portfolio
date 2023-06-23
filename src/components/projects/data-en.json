@@ -34,8 +34,8 @@
     {
         "id": 3,
         "name": "Portfolio",
-        "description": "",
-        "bullets": ["Muestra los paises contenidos en la base de datos.", "Detalle de la informaciónde cada pais.", "Buscador de paises.", "Ordenamiento de los paises de forma alfabetica o por población.", "Filtrado por Continente y por Actividades.", "Formulario para agregar actividades a uno o mas paises a la vez."],
+        "description": "This website is to show the projects that he carried out and that the people who enter this site know a little more about me.\n\nIn addition to using the technologies that he has been working on throughout Henry's bootcamp, I also gave myself to the task of using Next.js in order to keep myself updated.\n\nSome of its features are:",
+        "bullets": ["Brief review about me and allows you to download my curriculum.", "Shows the projects I've done.", "Contact form.", "Links to my Github, LinkedIn and Email.", "Translation of the Spanish - English.", "Dark mode."],
         "image": ["/assets/images/projects/portfolio01.png", 
             "/assets/images/projects/portfolio02.png", 
             "/assets/images/projects/portfolio03.png", 
