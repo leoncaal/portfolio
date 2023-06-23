@@ -22,6 +22,9 @@
 .img:hover {
     opacity: .9;
 }
+.opacity {
+    opacity: 0%;
+}
 .animatefade {
     animation-name: animate-fade;
     animation-duration: 0.5s;
