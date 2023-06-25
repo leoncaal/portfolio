@@ -5,16 +5,9 @@ import Image from "next/image";
 const Theme = () => {
   const [theme, setTheme] = useState(null);
 
-  useEffect(() => {
-    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-      localStorage.setItem("value", "dark");
-      setTheme('dark');
-    }
-    else {
-      localStorage.setItem("value", "light");
-      setTheme('light');
-    }
-  }, [])
+  //localStorage.removeItem("value")
+
+  //console.log(localStorage.getItem("value"));
 
   useEffect(() => {
     if (theme === "dark") {
@@ -28,11 +21,21 @@ const Theme = () => {
     setTimeout(() => {
       if (localStorage.getItem("value") === "dark") {
         setTheme('dark');
-      document.documentElement.classList.add("dark");
-    } else {
+        document.documentElement.classList.add("dark");
+      } 
+      if (localStorage.getItem("value") === "light") {
+        setTheme('light');
+        document.documentElement.classList.remove("dark");
+      } else {
+      if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+        localStorage.setItem("value", "dark");
+        setTheme('dark');
+      }else {
         setTheme('light')
-      document.documentElement.classList.remove("dark");
-    }
+        document.documentElement.classList.remove("dark");
+      }
+        
+      }
     }, 0);
     
   }, []);
@@ -40,6 +43,7 @@ const Theme = () => {
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
     localStorage.setItem("value", theme === "dark" ? "light" : "dark");
+    console.log(localStorage.getItem("value"));
   };
 
   return (
