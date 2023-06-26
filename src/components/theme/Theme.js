@@ -19,16 +19,16 @@ const Theme = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      if (localStorage.getItem("value") === "dark") {
+      if (sessionStorage.getItem("value") === "dark") {
         setTheme('dark');
         document.documentElement.classList.add("dark");
       } 
-      if (localStorage.getItem("value") === "light") {
+      if (sessionStorage.getItem("value") === "light") {
         setTheme('light');
         document.documentElement.classList.remove("dark");
       } else {
       if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-        localStorage.setItem("value", "dark");
+        sessionStorage.setItem("value", "dark");
         setTheme('dark');
       }else {
         setTheme('light')
@@ -42,8 +42,7 @@ const Theme = () => {
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
-    localStorage.setItem("value", theme === "dark" ? "light" : "dark");
-    console.log(localStorage.getItem("value"));
+    sessionStorage.setItem("value", theme === "dark" ? "light" : "dark");
   };
 
   return (
