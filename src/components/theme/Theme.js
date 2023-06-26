@@ -7,8 +7,33 @@ const Theme = () => {
 
   //localStorage.removeItem("value")
 
-  //console.log(localStorage.getItem("value"));
+  useEffect (() => {
+    
+    
+  }, []);
 
+  
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (sessionStorage.getItem("value") === "dark") {
+        setTheme('dark');
+        document.documentElement.classList.add("dark");
+        console.log(sessionStorage.getItem("value"));
+      } 
+      if (sessionStorage.getItem("value") === "light") {
+        setTheme('light');
+        document.documentElement.classList.remove("dark");
+      } else {
+        if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+          sessionStorage.setItem("value", "dark");
+          setTheme('dark');
+          document.documentElement.classList.add("dark");
+        }
+      }
+    }, 0);
+    
+  }, []);
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
@@ -16,29 +41,6 @@ const Theme = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [theme]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (sessionStorage.getItem("value") === "dark") {
-        setTheme('dark');
-        document.documentElement.classList.add("dark");
-      } 
-      if (sessionStorage.getItem("value") === "light") {
-        setTheme('light');
-        document.documentElement.classList.remove("dark");
-      } else {
-      if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-        sessionStorage.setItem("value", "dark");
-        setTheme('dark');
-      }else {
-        setTheme('light')
-        document.documentElement.classList.remove("dark");
-      }
-        
-      }
-    }, 0);
-    
-  }, []);
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
