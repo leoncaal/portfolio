@@ -25,7 +25,7 @@ export default async function RootLayout({ children, params: {locale} }) {
   return (
     <html lang={locale} id="conoceme" className=''>
        <link rel = "shortcut icon" href = "/favicon.png" type = "image/png"></link>
-      <body className={`${inter.className} bg-black dark:bg-white`}>
+      <body className={`${inter.className} bg-white dark:bg-black`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
 
         {children}</NextIntlClientProvider></body>
