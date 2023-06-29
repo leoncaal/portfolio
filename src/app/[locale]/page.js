@@ -8,7 +8,7 @@ import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
-    <div className={`${styles.divMain} bg-[#ffffff] dark:bg-[#000000]`}> 
+    <div className={`${styles.divMain} ${styles.animatefade} bg-[#ffffff] dark:bg-[#000000]`}> 
       <section>
         <Navbar />
       </section>

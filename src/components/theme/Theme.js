@@ -7,13 +7,6 @@ const Theme = () => {
 
   //localStorage.removeItem("value")
 
-  useEffect (() => {
-    
-    
-  }, []);
-
-  
-
   useEffect(() => {
     setTimeout(() => {
       if (sessionStorage.getItem("value") === "dark") {
@@ -50,9 +43,9 @@ const Theme = () => {
   return (
     <div className={styles.divMain}>
       {theme === "dark" ? <button onClick={handleThemeSwitch} value="dark">
-      <Image src="/assets/images/iconos/light.png" className={styles.iconTheme} alt="light" width="30" height="30"/>
+      <Image src="/assets/images/iconos/light.png" className={`${styles.iconTheme} ${styles.animatefade}`} alt="light" width="30" height="30"/>
       </button> : <button onClick={handleThemeSwitch} value="light">
-      <Image src="/assets/images/iconos/dark.png" className={styles.iconTheme} alt="dark" width="30" height="30"/>
+      <Image src="/assets/images/iconos/dark.png" className={`${styles.iconTheme} ${styles.animatefade}`} alt="dark" width="30" height="30"/>
       </button>}
     </div>
   );

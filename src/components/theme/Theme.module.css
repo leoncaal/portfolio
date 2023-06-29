@@ -14,3 +14,21 @@
     opacity: 90%;
     transform: scale(1.1);
 }
+.animatefade {
+    animation-duration: .8s;
+    animation-name: animate-fade;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+    -webkit-animation-name: animate-fade;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-fill-mode: backwards;
+}
+@keyframes animate-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}  
