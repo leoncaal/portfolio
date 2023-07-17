@@ -16,7 +16,7 @@ const Home = () => {
 
   setTimeout(() => {
     setSpinner(false);
-  }, 250);
+  }, 800);
 
   return (
     <div>
