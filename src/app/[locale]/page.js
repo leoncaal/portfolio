@@ -16,11 +16,12 @@ const Home = () => {
 
   setTimeout(() => {
     setSpinner(false);
-  }, 800);
+  }, 1000);
 
   return (
     <div>
   {spinner === true ? <div className={`${styles.spinner} flex items-end gap-8 backdrop-brightness-50 backdrop-opacity-70 bg-[#9DB2BF]`}>
+    <p className={`text-6xl`}>Bienvenido</p>
     <Spinner color="gray" className={`${styles.spinnerSize} h-12 w-12`} />
     <p className={`${styles.p} text-2xl`}>Cargando...</p>
   </div> : <div className={`${styles.divMain} ${styles.animatefade} bg-[#ffffff] dark:bg-[#000000]`}> 
