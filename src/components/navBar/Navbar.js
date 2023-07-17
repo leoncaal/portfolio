@@ -10,6 +10,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import {useTranslations} from 'next-intl';
+import { useEffect, useState } from 'react';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -19,12 +20,27 @@ const Navbar = () => {
 
   const t = useTranslations('NavText');
   
-  const navigation = [
-  { name: t('inicio'), href: '#', current: true },
+  const[ navigation, setNavigation] = useState([
+  { name: t('inicio'), href: '#', current: false },
   { name: t('conoceme'), href: '#conoceme', current: false },
   { name: t('proyectos'), href: '#projects', current: false },
   { name: t('contacto'), href: '#contacto', current: false },
-]
+])
+
+const handleClic = (event) => {
+  for (let index = 0; index < navigation.length; index++) {
+    if (navigation[index].name === event.target.name) {
+      setNavigation([...navigation, navigation[index].current = true]);
+      console.log(navigation);
+    } 
+    if (navigation[index].name !== event.target.name) {
+      setNavigation([...navigation, navigation[index].current = false]);
+    }
+    if (navigation.length > 4){
+      navigation.pop();
+    }
+  }
+}
   
   return (
     <Disclosure as="nav" className={`${styles.nav} fixed w-full`}>
@@ -63,6 +79,8 @@ const Navbar = () => {
                       <a
                         key={item.name}
                         href={item.href}
+                        name={item.name}
+                        onClick={handleClic}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
@@ -79,7 +97,6 @@ const Navbar = () => {
     
                 <LanguageSelector />
                 <Theme />
-
                 {/* Profile dropdown */}
                 {/* <Menu as="div" className="relative ml-3">
                   <div>
@@ -145,6 +162,7 @@ const Navbar = () => {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
+                  name={item.name}
                   href={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
