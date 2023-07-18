@@ -12,7 +12,6 @@ const Theme = () => {
       if (sessionStorage.getItem("value") === "dark") {
         setTheme('dark');
         document.documentElement.classList.add("dark");
-        console.log(sessionStorage.getItem("value"));
       } 
       if (sessionStorage.getItem("value") === "light") {
         setTheme('light');
