@@ -1,4 +1,8 @@
 {
+    "Page": {
+      "bienvenido": "Bienvenido",
+      "cargando": "Cargando..."
+    },
     "NavText": {
       "inicio": "Inicio",
       "conoceme": "Conoceme",
