@@ -30,15 +30,6 @@ export default async function RootLayout({ children, params: {locale} }) {
     <html lang={locale} id="conoceme" className=''>
       <Head>
        <link rel = "shortcut icon" href = "/favicon.png" type = "image/png"></link>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTV04F67E1"></script>
-<script>
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FTV04F67E1');
-</script>
        </Head>
       <body className={`${inter.className} bg-white dark:bg-black`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
