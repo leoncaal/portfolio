@@ -2,9 +2,11 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
-import {useLocale} from 'next-intl';
+import ReactGA from 'react-ga4';
 
 const inter = Inter({ subsets: ['latin'] })
+const TRACK_ID = 'UA-279261763-1'
+ReactGA.initialize(TRACK_ID);
 
 export const metadata = {
   title: 'Porfolio - Leonel Castañeda',
