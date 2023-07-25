@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
 import ReactGA from 'react-ga4';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] })
 const TRACK_ID = 'G-PLEJ2TY5E7'
@@ -27,7 +28,18 @@ export default async function RootLayout({ children, params: {locale} }) {
   }
   return (
     <html lang={locale} id="conoceme" className=''>
+      <Head>
        <link rel = "shortcut icon" href = "/favicon.png" type = "image/png"></link>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTV04F67E1"></script>
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FTV04F67E1');
+</script>
+       </Head>
       <body className={`${inter.className} bg-white dark:bg-black`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
 
