@@ -5,8 +5,9 @@ import {notFound} from 'next/navigation';
 import ReactGA from 'react-ga4';
 
 const inter = Inter({ subsets: ['latin'] })
-const TRACK_ID = 'UA-279261763-1'
+const TRACK_ID = 'G-PLEJ2TY5E7'
 ReactGA.initialize(TRACK_ID);
+ReactGA.pageView(document.location.pathname);
 
 export const metadata = {
   title: 'Porfolio - Leonel Castañeda',
