@@ -18,7 +18,7 @@ export default function GoogleAnalytics(GA_MEASUREMENT_ID){
     return (
         <>
             <Script strategy="afterInteractive" 
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}/>
+                async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}/>
             <Script id='google-analytics' strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                 __html: `
