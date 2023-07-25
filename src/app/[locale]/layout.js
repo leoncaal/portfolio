@@ -2,13 +2,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
-import ReactGA from 'react-ga4';
-import Head from 'next/head';
-
+import GoogleAnalytics from '@/components/googleAnalytics/GoogleAnalytics';
 const inter = Inter({ subsets: ['latin'] })
-const TRACK_ID = 'G-PLEJ2TY5E7'
-ReactGA.initialize(TRACK_ID);
-ReactGA.send({ hitType: "pageview", page: "/" });
 
 export const metadata = {
   title: 'Porfolio - Leonel Castañeda',
@@ -28,9 +23,8 @@ export default async function RootLayout({ children, params: {locale} }) {
   }
   return (
     <html lang={locale} id="conoceme" className=''>
-      <Head>
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-FTV04F67E1" />
        <link rel = "shortcut icon" href = "/favicon.png" type = "image/png"></link>
-       </Head>
       <body className={`${inter.className} bg-white dark:bg-black`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
 
