@@ -5,7 +5,7 @@ import {usePathname, useSearchParams} from 'next/navigation'
 import { useEffect } from "react";
 import { pageview } from '@/lib/gtagHelper';
 
-export default function GoogleAnalytics(GA_MEASUREMENT_ID){
+export default function GoogleAnalytics({GA_MEASUREMENT_ID}){
     const pathname = usePathname()
     const searchParams = useSearchParams()
 
@@ -17,7 +17,7 @@ export default function GoogleAnalytics(GA_MEASUREMENT_ID){
     }, [pathname, searchParams, GA_MEASUREMENT_ID]);
     return (
         <>
-            <Script strategy="afterInteractive" 
+            <Script 
                 async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}/>
             <Script id='google-analytics' strategy="afterInteractive"
                 dangerouslySetInnerHTML={{

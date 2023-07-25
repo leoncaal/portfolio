@@ -23,7 +23,7 @@ export default async function RootLayout({ children, params: {locale} }) {
   }
   return (
     <html lang={locale} id="conoceme" className=''>
-      <GoogleAnalytics GA_MEASUREMENT_ID="G-FTV04F67E1" />
+      <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
        <link rel = "shortcut icon" href = "/favicon.png" type = "image/png"></link>
       <body className={`${inter.className} bg-white dark:bg-black`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
