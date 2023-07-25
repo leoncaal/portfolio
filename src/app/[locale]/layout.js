@@ -7,7 +7,7 @@ import ReactGA from 'react-ga4';
 const inter = Inter({ subsets: ['latin'] })
 const TRACK_ID = 'G-PLEJ2TY5E7'
 ReactGA.initialize(TRACK_ID);
-ReactGA.pageView(document.location.pathname);
+ReactGA.send({ hitType: "pageview", page: "/" });
 
 export const metadata = {
   title: 'Porfolio - Leonel Castañeda',
