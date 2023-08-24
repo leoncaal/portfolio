@@ -4,6 +4,7 @@ import styles from "./Projects.module.css";
 import { useState } from "react";
 import CardProjects from "./CardProjects";
 import DetailProject from "./DetailProject";
+import DetailProjectUx from "./DetailProjectUx";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
 
@@ -27,6 +28,8 @@ const Projects = () => {
   if(loc === "en"){
     projects = require("./data-en.json");
   }
+
+  const projectSelect = projects.filter(project => project.id === idClicked);
 
   return (
     <div className={styles.divFirst} >
@@ -60,9 +63,7 @@ const Projects = () => {
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className={`${styles.divRest} flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t dark:bg-[#27374D]`}>
-                
-                <DetailProject id={idClicked}/>
-
+                {projectSelect[0].tipo === "web" ? <DetailProject id={idClicked}/> : <DetailProjectUx id={idClicked}/>}
                 </div>
                 {/*footer*/}
                 <div className={`${styles.divClose} flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b dark:bg-[#27374D]`}>
