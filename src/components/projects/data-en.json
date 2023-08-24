@@ -13,7 +13,8 @@
         "visit": "Visit",
         "close": "Close",
         "technologiesD": "Technologies",
-        "descriptionD": "Description"
+        "descriptionD": "Description",
+        "tipo": "web"
     },
     {
         "id": 2,
@@ -29,7 +30,8 @@
         "visit": "Visit",
         "close": "Close",
         "technologiesD": "Technologies",
-        "descriptionD": "Description"
+        "descriptionD": "Description",
+        "tipo": "web"
     },
     {
         "id": 3,
@@ -45,6 +47,27 @@
         "visit": "Visit",
         "close": "Close",
         "technologiesD": "Technologies",
-        "descriptionD": "Description"
+        "descriptionD": "Description",
+        "tipo": "web"
+    },
+    {
+        "id": 4,
+        "name": "Google UX project",
+        "description": "In this project I developed a prototype for the reservation in a luxury restaurant, which corresponds to the Google career certificate: \"User Experience Design\" (UX).\n\nThroughout the entire process of Design addresses several stages in which different activities are carried out:\n",
+        "bullets": ["User research.", "People.", "Problem statement.", "User journey map.", "Paper page layouts.", "Digital page layouts.", "Low fidelity prototype ", "Usability study", "Mockups", "High fidelity prototype", "Accessibility"],
+        "description2": "I invite you to visualize the process as well as the result, which you can find in the corresponding button.\n\n I appreciate your comments and as a good designer they help me to improve my work and continue learning.\n",
+        "image": ["/assets/images/projects/reservUX01.png",
+            "/assets/images/projects/reservUX02.png",
+            "/assets/images/projects/reservUX03.png",
+            "/assets/images/projects/reservUX04.png"],
+        "technologies": ["ifigma", "iphotoshop"],
+        "website": "https://www.figma.com/proto/Z0Z93JSBdoOZKTi82eLuFV/Reserv(mobile)-(Community)?type=design&node-id=221-7003&t=3i5LGpCmrEMj61el-1&scaling=scale-down&page-id=221%3A7002&starting-point-node-id=221%3A7003&mode=design",
+        "docs": "/assets/docs/Caso_de_Estudio.pdf",
+        "visit": "Visit",
+        "process": "Process",
+        "close": "Close",
+        "technologiesD": "Technologies",
+        "descriptionD": "Description",
+        "tipo": "ux"
     }
 ]

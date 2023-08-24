@@ -13,7 +13,8 @@
         "visit": "Visitar",
         "close": "Cerrar",
         "technologiesD": "Tecnologias",
-        "descriptionD": "Descripción"
+        "descriptionD": "Descripción",
+        "tipo": "web"
     },
     {
         "id": 2,
@@ -29,7 +30,8 @@
         "visit": "Visitar",
         "close": "Cerrar",
         "technologiesD": "Tecnologias",
-        "descriptionD": "Descripción"
+        "descriptionD": "Descripción",
+        "tipo": "web"
     },
     {
         "id": 3,
@@ -45,6 +47,27 @@
         "visit": "Visitar",
         "close": "Cerrar",
         "technologiesD": "Tecnologias",
-        "descriptionD": "Descripción"
+        "descriptionD": "Descripción",
+        "tipo": "web"
+    },
+    {
+        "id": 4,
+        "name": "Proyecto Google UX",
+        "description": "En este proyecto desarrolle un prototipo para la reservación en un restaurante de lujo, el cual corresponde al certificado de carrera de Google: \"Diseño de experiencia de usuario\" (UX).\n\n A lo largo de todo el proceso de diseño aborde varias etapas en la cuales lleve acabo diferentes actividades: \n",
+        "bullets": ["Investigación de usuario.", "Personas.", "Planteamiento del problema.", "Mapa de recorrido del usuario.", "Esquemas de pagina en papel.", "Esquemas de pagina digitales.", "Prototipo de baja fidelidad", "Estudio de usabilidad", "Mockups", "Prototipo de alta fidelidad", "Accesibilidad"],
+        "description2": "Te invito a visualizar el proceso así como el resultado los cuales podrás encontrar en el botón correspondiente.\n\n Agradezco tus comentarios y como buen diseñador me sirven para perfeccionar mi trabajo y continuar aprendiendo.\n",
+        "image": ["/assets/images/projects/reservUX01.png",
+            "/assets/images/projects/reservUX02.png",
+            "/assets/images/projects/reservUX03.png",
+            "/assets/images/projects/reservUX04.png"],
+        "technologies": ["ifigma", "iphotoshop"],
+        "website": "https://www.figma.com/proto/Z0Z93JSBdoOZKTi82eLuFV/Reserv(mobile)-(Community)?type=design&node-id=221-7003&t=3i5LGpCmrEMj61el-1&scaling=scale-down&page-id=221%3A7002&starting-point-node-id=221%3A7003&mode=design",
+        "docs": "/assets/docs/Caso_de_Estudio.pdf",
+        "visit": "Visitar",
+        "process": "Proceso",
+        "close": "Cerrar",
+        "technologiesD": "Tecnologias",
+        "descriptionD": "Descripción",
+        "tipo": "ux"
     }
 ]

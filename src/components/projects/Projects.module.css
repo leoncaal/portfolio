@@ -11,7 +11,8 @@
     padding: 8% 4% 8% 4%;
 }
 .divMain {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -36,7 +37,7 @@
     margin-top:-80px;/* height of nav*/
 }
 .txtTitle {
-    padding-bottom: 100%;
+    padding-bottom: 60%;
     font-size: 30px;
     font-weight:600;
     color: black;
@@ -49,6 +50,7 @@
 @media (max-width: 640px) {
     .divMain {
         flex-direction: column;
+        grid-template-columns: repeat(1, 1fr)
     }
     .txtTitle {
         padding-bottom: 10%;
