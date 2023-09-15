@@ -69,5 +69,25 @@
         "technologiesD": "Technologies",
         "descriptionD": "Description",
         "tipo": "ux"
+    },
+    {
+        "id": 5,
+        "name": "Google UX project 2",
+        "description": "This project was developed under the slogan of creating a website where you can find and view DIY tutorials, which corresponds to the Google career certificate: \"User Experience Design\" (UX).\n\n Throughout the process develop various activities in order to create a product that meets the user's needs and above all that provides a good experience when interacting with it: \n",
+        "bullets": ["User research.", "Empathy maps", "People.", "Problem statement.", "User journey map.", "Paper page layouts.", "Digital page layouts.", "Low fidelity prototype ", "Usability study", "Mockups", "High fidelity prototype", "Accessibility"],
+        "description2": "Again I invite you to visualize the process as well as the result which you can find in the corresponding button.\n\n I appreciate your comments and as a good designer they help me perfect my work and continue learning.\n\n Important note: The prototype flows are in a single link which will display a menu with which you can select the one you want to see, if you want to see another one to return to the menu, open the link again.\n",
+        "image": ["/assets/images/projects/bricolajeUX01.png",
+            "/assets/images/projects/bricolajeUX02.png",
+            "/assets/images/projects/bricolajeUX03.png",
+            "/assets/images/projects/bricolajeUX04.png"],
+        "technologies": ["ixd", "iphotoshop"],
+        "website": "https://xd.adobe.com/view/4061f4c8-5197-4a55-bd99-9afec946cf6e-1532/?fullscreen",
+        "docs": "/assets/docs/Caso_de_Estudio2.pdf",
+        "visit": "Visit",
+        "process": "Process",
+        "close": "Close",
+        "technologiesD": "Technologies",
+        "descriptionD": "Description",
+        "tipo": "ux"
     }
 ]
