@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <div>
-  {spinner === true ? <div className={`${styles.spinner} flex items-end gap-8 backdrop-brightness-50 backdrop-opacity-70 bg-[#9DB2BF]`}>
+  {spinner === true ?<div className={`${styles.spinner} flex items-end gap-8 backdrop-brightness-50 backdrop-opacity-70 bg-[#9DB2BF]`}>
     <p className={`text-6xl text-black animate-fade-up animate-once animate-duration-500 animate-ease-in`}>{t('bienvenido')}</p>
     <Spinner color="gray" className={`${styles.spinnerSize} h-12 w-12`} />
     <p className={`${styles.p} text-2xl text-black`}>{t('cargando')}</p>

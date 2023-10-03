@@ -89,5 +89,30 @@
         "technologiesD": "Technologies",
         "descriptionD": "Description",
         "tipo": "ux"
+    },
+    {
+        "id": 6,
+        "name": "Google UX project 3",
+        "description": "On this occasion I developed a project which aims to provide security to teachers and parents of children who attend kindergarten; This is the third and last project that I developed for the Google career certificate: \"User Experience Design\" (UX).\n\n For this project I had the freedom to choose a real project which I intend to program and implement in a kindergarten, at the moment I am still in the user experience development part but later I will work on programming. Like the previous projects, carry out all the design stages which appear below:\n",
+        "bullets": ["User research.", "Empathy maps", "People.", "Problem statement.", "User journey map.", "Paper page layouts.", "Digital page layouts.", "Low fidelity prototype ", "Usability study", "Mockups", "High fidelity prototype", "Accessibility", "Material UI Design System"],
+        "description2": "Just as in previous Google projects, I invite you to learn about the process as well as the result, which you can find in the corresponding button.\n\n I appreciate your feedback, it helps me perfect my work and continue learning.\n\n",
+        "image": ["/assets/images/projects/kinderUX01.png",
+            "/assets/images/projects/kinderUX02.png",
+            "/assets/images/projects/kinderUX03.png",
+            "/assets/images/projects/kinderUX04.png",
+            "/assets/images/projects/kinderUX05.png"],
+        "technologies": ["ifigma", "iphotoshop", "imaterialui"],
+        "website": "https://xd.adobe.com/view/4061f4c8-5197-4a55-bd99-9afec946cf6e-1532/?fullscreen",
+        "docs": "/assets/docs/Caso_de_Estudio3.pdf",
+        "visit": "Visitar",
+        "visitweb": "Visit web",
+        "visitmovil": "Visit movil",
+        "websiteweb": "https://www.figma.com/proto/7kpZvp3VEwxTApVEO5SzKm/Untitled?type=design&node-id=105-116&t=WibeAySBge0yGUlE-1&scaling=contain&page-id=105:115&starting-point-node-id=105:116&mode=design",
+        "websitemovil": "https://www.figma.com/proto/7kpZvp3VEwxTApVEO5SzKm/Untitled?type=design&node-id=64-1398&t=6WoZMB7o8LpkBrNA-1&scaling=scale-down&page-id=64:1397&starting-point-node-id=64:1398&mode=design",
+        "process": "Process",
+        "close": "Close",
+        "technologiesD": "Technologies",
+        "descriptionD": "Description",
+        "tipo": "ux"
     }
 ]

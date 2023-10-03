@@ -38,6 +38,10 @@
     padding-top: 80px;
     padding-left: 20px;
 }
+.divButtons {
+    display: flex;
+    flex-direction: row;
+}
 .txtContent {
     text-align: justify;
 }
