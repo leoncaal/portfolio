@@ -89,5 +89,30 @@
         "technologiesD": "Tecnologias",
         "descriptionD": "Descripción",
         "tipo": "ux"
+    },
+    {
+        "id": 6,
+        "name": "Proyecto Google UX 3",
+        "description": "En esta ocasión desarrollé un proyecto el cual tiene como objetivo brindar brindar seguridad a los maestros y a los padres de menores que acuden a un kínder; este es el tercer y ultimo proyecto que desarrollo para el certificado de carrera de Google: \"Diseño de experiencia de usuario\" (UX).\n\n Para este proyecto tuve la libertad de escoger un proyecto real el cual pretendo programar e implementar en un kínder, por el momento aun estoy en la parte de desarrollo de experiencia de usuario pero mas adelante trabajare en la programación. Al igual que los anteriores proyecto desempeñe todas las etapas del diseño las cuales aparecen a continiación: \n",
+        "bullets": ["Investigación de usuario.", "Mapas de empatía", "Personas.", "Planteamiento del problema.", "Mapa de recorrido del usuario.", "Esquemas de pagina en papel.", "Esquemas de pagina digitales.", "Prototipo de baja fidelidad", "Estudio de usabilidad", "Mockups", "Prototipo de alta fidelidad", "Accesibilidad", "Sistema de diseño Material UI"],
+        "description2": "Así como en los anteriores proyectos de Google te invito a conocer el proceso así como el resultado los cuales podrás encontrar en el botón correspondiente.\n\n Agradezco tu feedback ya me sirve para perfeccionar mi trabajo y continuar aprendiendo.\n\n",
+        "image": ["/assets/images/projects/kinderUX01.png",
+            "/assets/images/projects/kinderUX02.png",
+            "/assets/images/projects/kinderUX03.png",
+            "/assets/images/projects/kinderUX04.png",
+            "/assets/images/projects/kinderUX05.png"],
+        "technologies": ["ifigma", "iphotoshop", "imaterialui"],
+        "website": "https://xd.adobe.com/view/4061f4c8-5197-4a55-bd99-9afec946cf6e-1532/?fullscreen",
+        "docs": "/assets/docs/Caso_de_Estudio3.pdf",
+        "visit": "Visitar",
+        "visitweb": "Visitar web",
+        "visitmovil": "Visitar móvil",
+        "websiteweb": "https://www.figma.com/proto/7kpZvp3VEwxTApVEO5SzKm/Untitled?type=design&node-id=105-116&t=WibeAySBge0yGUlE-1&scaling=contain&page-id=105:115&starting-point-node-id=105:116&mode=design",
+        "websitemovil": "https://www.figma.com/proto/7kpZvp3VEwxTApVEO5SzKm/Untitled?type=design&node-id=64-1398&t=6WoZMB7o8LpkBrNA-1&scaling=scale-down&page-id=64:1397&starting-point-node-id=64:1398&mode=design",
+        "process": "Proceso",
+        "close": "Cerrar",
+        "technologiesD": "Tecnologias",
+        "descriptionD": "Descripción",
+        "tipo": "ux"
     }
 ]

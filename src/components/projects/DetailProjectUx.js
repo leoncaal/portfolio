@@ -130,8 +130,15 @@ const DetailProjectUX = (props) => {
   
   <div className={styles.divBtn}>
     <br />
-    <br />
-  <a href={datos[0].website} target="_blank"><button className={styles.btnVisitame}>{datos[0].visit}</button></a>
+    <br />{
+      datos[0].websiteweb ? <div className={styles.divButtons}>
+        <a href={datos[0].websiteweb} target="_blank"><button className={styles.btnVisitame}>{datos[0].visitweb}</button></a>
+      <a href={datos[0].websitemovil} target="_blank"><button className={styles.btnVisitame}>{datos[0].visitmovil}</button></a>
+      </div>
+      
+      : <a href={datos[0].website} target="_blank"><button className={styles.btnVisitame}>{datos[0].visit}</button></a>
+    }
+  
   <a href={datos[0].docs} target="_blank"><button className={styles.btnVisitame}>{datos[0].process}</button></a>
   </div>
   

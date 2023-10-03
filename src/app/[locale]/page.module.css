@@ -30,6 +30,7 @@
   height: 100%;
   align-items: center;
   z-index: 1;
+  background-image: url('../../../public/assets/images/bkspinner.png');
 }
 .spinnerSize {
   width: 10rem;
