@@ -127,6 +127,31 @@ const DetailProjectUX = (props) => {
   </div>
 
   </div>
+  <div>
+    <br></br>
+    
+    {datos[0].iframemovil ?
+    <div>
+      <h1 className={`${styles.txtHeaders} text-black dark:text-white`}>{datos[0].textproto}</h1>
+      <br></br>
+      <iframe className={styles.iframe} src={datos[0].iframemovil} allowfullscreen></iframe> 
+
+    </div>
+    :
+    null
+    }
+    {datos[0].iframeweb ?
+    <div>
+      <br></br>
+      <iframe className={styles.iframe} src={datos[0].iframeweb} allowfullscreen></iframe> 
+      <br></br>
+    </div>
+    :
+    null
+    }
+
+  </div>
+
   
   <div className={styles.divBtn}>
     <br />
@@ -141,6 +166,10 @@ const DetailProjectUX = (props) => {
   
   <a href={datos[0].docs} target="_blank"><button className={styles.btnVisitame}>{datos[0].process}</button></a>
   </div>
+
+{/*   <div>
+  <iframe className={styles.iframe} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7kpZvp3VEwxTApVEO5SzKm%2FUntitled%3Ftype%3Ddesign%26node-id%3D64-1398%26t%3DHz2dp0QlnZc6Qp6K-1%26scaling%3Dscale-down%26page-id%3D64%253A1397%26starting-point-node-id%3D64%253A1398%26mode%3Ddesign" allowfullscreen></iframe>
+  </div> */}
   
   </div>
   )
