@@ -127,32 +127,7 @@ const DetailProjectUX = (props) => {
   </div>
 
   </div>
-  <div>
-    <br></br>
-    
-    {datos[0].iframemovil ?
-    <div>
-      <h1 className={`${styles.txtHeaders} text-black dark:text-white`}>{datos[0].textproto}</h1>
-      <br></br>
-      <iframe className={styles.iframe} src={datos[0].iframemovil} allowfullscreen></iframe> 
-
-    </div>
-    :
-    null
-    }
-    {datos[0].iframeweb ?
-    <div>
-      <br></br>
-      <iframe className={styles.iframe} src={datos[0].iframeweb} allowfullscreen></iframe> 
-      <br></br>
-    </div>
-    :
-    null
-    }
-
-  </div>
-
-  
+      
   <div className={styles.divBtn}>
     <br />
     <br />{
