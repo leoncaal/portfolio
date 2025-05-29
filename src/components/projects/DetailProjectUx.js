@@ -138,7 +138,7 @@ const DetailProjectUX = (props) => {
       
       : <a href={datos[0].website} target="_blank"><button className={styles.btnVisitame}>{datos[0].visit}</button></a>
     }
-  
+   
   {datos[0].docs !== "" ? <a href={datos[0].docs} target="_blank"><button className={styles.btnVisitame}>{datos[0].process}</button></a> : null}
   </div>
 
